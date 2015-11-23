@@ -24,7 +24,7 @@ body{
 canvas{
 /*the code below this activates the canvas border, turn it on to visibly see how big the canvas is */
 
-/*	border: 1px solid red;*/  
+/*	border: 1px solid red; */ 
 
 	position: absolute;
     top:0;
@@ -32,4 +32,6 @@ canvas{
     left: 0;
     right: 0;
     margin:auto;
+    display: none;
+    
 }

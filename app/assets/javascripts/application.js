@@ -22,7 +22,7 @@
 // ***This comment starts at line 4, code underneath begins at line 5***
 var canvas = document.createElement('canvas'); 
 var w = canvas.width = 800,
-    h = canvas.height = 600;
+    h = canvas.height = 400;
 var c = canvas.getContext('2d');
 
 var img = new Image();
@@ -33,7 +33,7 @@ background.src = "/assets/title(1).jpg";
 
 
 
-var position = {x : 410, y : h/2.5};
+var position = {x : 410, y : 238};
 
 document.body.appendChild(canvas);
 
@@ -81,7 +81,7 @@ var draw = function(){
 
 };
 
-setInterval(draw, 1000/60);
+setInterval(draw, 3500/60);
  // ***This comment ends the above code at line 67***
 
 
@@ -89,7 +89,9 @@ setInterval(draw, 1000/60);
 
 
 
-
+$(document).ready(function() {
+  $("canvas").fadeIn(10000);
+});
 
 
 
