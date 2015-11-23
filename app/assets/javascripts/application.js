@@ -26,6 +26,8 @@ var w = canvas.width = 800,
     h = canvas.height = 400;
 var c = canvas.getContext('2d');
 
+
+
 var img = new Image();
 img.src = 'http://oi41.tinypic.com/4i2aso.jpg';
 
@@ -74,7 +76,10 @@ var draw = function(){
   c.drawImage(background,160,0);
 
   while(particles.length > 500) particles.shift();
+c.font = "30px Arial";
+c.fillStyle = "white";
 
+c.fillText("BEGIN",515,275);
   for(var i = 0; i < particles.length; i++)
   {
     particles[i].update();
@@ -82,6 +87,8 @@ var draw = function(){
 };
 
 setInterval(draw, 3500/60);
+
+
  // ***This comment ends the above code at line 67***
 
 
