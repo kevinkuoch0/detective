@@ -1,0 +1,2 @@
+module SixslidesHelper
+end
