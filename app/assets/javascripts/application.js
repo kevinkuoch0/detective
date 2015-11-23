@@ -72,6 +72,9 @@ var draw = function(){
 
   // draw the background image before you draw the particles
   c.drawImage(background,160,0);
+  c.font="20px Betty Noir Regular";
+  c.fillStyle = "white";
+  c.fillText("Hello World!",500,200);
 
   while(particles.length > 500) particles.shift();
 
@@ -81,8 +84,12 @@ var draw = function(){
   }
 };
 
+
+
 setInterval(draw, 3500/60);
  // ***This comment ends the above code at line 67***
+
+
 
 
 
