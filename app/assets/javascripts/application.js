@@ -22,6 +22,7 @@
 
 // ***This comment starts at line 4, code underneath begins at line 5***
 var canvas = document.createElement('canvas'); 
+
 var w = canvas.width = 800;
     h = canvas.height = 340;
 var c = canvas.getContext('2d');
@@ -31,7 +32,6 @@ img.src = 'http://oi41.tinypic.com/4i2aso.jpg';
 
 var background = new Image();
 background.src = "/assets/title(1).jpg";
-
 
 
 var position = {x : 410, y : 238};
@@ -93,17 +93,23 @@ var draw = function(){
 setInterval(draw, 3500/60);
  // ***This comment ends the above code at line 67***
 
-
-
 $(document).ready(function() {
- $("canvas").fadeIn(7000);
- $("nav").fadeIn(7000);
+ $("canvas").fadeIn(3000);
+ $("nav").fadeIn(3000);
  $("#noir-song").get(0).play();
- $("#start").click(function() {
-  // $("canvas").fadeOut(3000);
-  alert("start");
- });
-});
-
+  //click function for the credits
+  $("#credits").on("click",function() {
+    $("canvas").fadeOut(1000);
+    $("#start").fadeOut(1000);
+    $("#credits").fadeOut(1000);
+    $("img").fadeIn(1000);
+  });  //end of the credits
+  
+ $("#start").on("click", function() {
+    $("canvas").fadeOut(1000);
+    $("#start").fadeOut(1000);
+    $("#credits").fadeOut(1000);
+  });
+}); // End of the loading document on line 115
 
 

@@ -36,35 +36,67 @@ canvas{
     z-index: 0;
 }
 
+
 nav{
   position: absolute;
   top: 50%;
   left: 60%;
-  font-size: 2vw;
-  font-family: 'Betty Noir Regular';
-  color: white;
-  display: none;
   z-index: 1;
+  color: white;
+  font-family: "Betty Noir Regular";
+  font-size: 2vw;
+  display: none;
 }
 
 nav ul{
-  list-style-type: none;
+    list-style-type: none;
 }
 
 nav li{
-  padding-top: 20px;
-}
-
-nav li a{
-  text-decoration: none;
-  color: white;
+  position: relative;
+  padding-bottom: 20px;
 }
 
 nav li a:visited{
-  color: white;
+  color:white;
+}
+
+nav li a:link{
+  text-decoration: none;
 }
 
 @font-face{
   font-family: 'Betty Noir Regular';
   src: url('/assets/bettynoir.ttf');
+}
+
+/*img {
+  display: none;
+  color:white;
+  border:1px solid blue;
+}*/
+
+img {
+/*the code below this activates the canvas border, turn it on to visibly see how big the canvas is */
+
+/*  border: 1px solid blue;  
+*/  position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    display: none;
+    width: 63%;
+    height: 81%;
+}
+/*position for the credits location*/
+p#names{
+  src: url('/assets/bettynoir.ttf');
+  font-family: "Betty Noir Regular";
+  position: absolute;
+  font-size: 2vw;
+  color: white;
+  bottom: 60%;
+  right: 70%;
 }
