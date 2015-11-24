@@ -89,6 +89,7 @@ img {
     width: 63%;
     height: 81%;
 }
+/*position for the credits location*/
 p#names{
   src: url('/assets/bettynoir.ttf');
   font-family: "Betty Noir Regular";
