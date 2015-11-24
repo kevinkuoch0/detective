@@ -97,19 +97,20 @@ setInterval(draw, 3500/60);
 
 //start of the loading document on line 98
 $(document).ready(function() {
- $("canvas").fadeIn(5000);
- $("nav").fadeIn(5000);
+ $("canvas").fadeIn(3000);
+ $("nav").fadeIn(3000);
  $("#noir-song").get(0).play();
   //click function for the credits
   $("#credits").on("click",function() {
     $("canvas").fadeOut(1000);
     $("#start").fadeOut(1000);
     $("#credits").fadeOut(1000);
-    $("img").fadeIn(6000);
+    $("img").fadeIn(1000);
   });  //end of the credits
   
  $("#start").on("click", function() {
     $("canvas").fadeOut(1000);
     $("#start").fadeOut(1000);
+    $("#credits").fadeOut(1000);
   });
 }); // End of the loading document on line 115
