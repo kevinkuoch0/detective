@@ -68,3 +68,9 @@ nav li a:link{
   font-family: 'Betty Noir Regular';
   src: url('/assets/bettynoir.ttf');
 }
+
+img {
+  display: none;
+  color:white;
+  border:1px solid blue;
+}
