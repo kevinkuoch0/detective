@@ -97,13 +97,26 @@ setInterval(draw, 3500/60);
 
 
 $(document).ready(function() {
- $("canvas").fadeIn(7000);
- $("nav").fadeIn(7000);
- // $("#noir-song").get(0).play();
+ $("canvas").fadeIn(3000);
+ $("nav").fadeIn(3000);
+ $("#noir-song").get(0).play();
 
- console.log($("#start"));
+  console.log($("#credits"));
+ $("#credits").click(function() {
+  $("canvas").fadeOut(1000);
+  $("#credits").fadeOut(1000);
+  $("#start").fadeOut(1000);
+   });
+
+
+  console.log($("#start"));
  $("#start").click(function() {
-  $("canvas").fadeOut(3000);
-  // alert("start");
+  $("canvas").fadeOut(1000);
+  $("#start").fadeOut(1000);
+  $("#credits").fadeOut(1000);
  });
+
+
+
+
 });
