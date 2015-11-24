@@ -92,10 +92,6 @@ var draw = function(){
 setInterval(draw, 3500/60);
  // ***This comment ends the above code at line 67***
 
-
-
-
-//start of the loading document on line 98
 $(document).ready(function() {
  $("canvas").fadeIn(3000);
  $("nav").fadeIn(3000);
@@ -114,3 +110,4 @@ $(document).ready(function() {
     $("#credits").fadeOut(1000);
   });
 }); // End of the loading document on line 115
+
