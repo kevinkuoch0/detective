@@ -22,8 +22,8 @@
 
 // ***This comment starts at line 4, code underneath begins at line 5***
 var canvas = document.createElement('canvas'); 
-var w = canvas.width = 800,
-    h = canvas.height = 400;
+var w = canvas.width = 800;
+    h = canvas.height = 340;
 var c = canvas.getContext('2d');
 
 var img = new Image();
@@ -72,13 +72,13 @@ var draw = function(){
 
   // draw the background image before you draw the particles
   c.drawImage(background,160,0);
-  c.font="20px Betty Noir Regular";
-  c.fillStyle = "white";
-  c.fillText("Start",500,200);
+  // c.font="20px Betty Noir Regular";
+  // c.fillStyle = "white";
+  // c.fillText("Start",500,200);
 
-  c.font="20px Betty Noir Regular";
-  c.fillStyle = "white";
-  c.fillText("Credits",500,250);
+  // c.font="20px Betty Noir Regular";
+  // c.fillStyle = "white";
+  // c.fillText("Credits",500,250);
 
   while(particles.length > 500) particles.shift();
 
@@ -95,14 +95,15 @@ setInterval(draw, 3500/60);
 
 
 
-
-
 $(document).ready(function() {
  $("canvas").fadeIn(7000);
+ $("nav").fadeIn(7000);
+ $("#noir-song").get(0).play();
+ $("#start").click(function() {
+  // $("canvas").fadeOut(3000);
+  alert("start");
+ });
 });
 
 
-$(document).ready(function() {
-    $("#noir-song").get(0).play();
-});
 

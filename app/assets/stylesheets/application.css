@@ -24,8 +24,8 @@ body{
 canvas{
 /*the code below this activates the canvas border, turn it on to visibly see how big the canvas is */
 
-/*	border: 1px solid red; */ 
-
+/*	border: 1px solid red;*/  
+  width: 100%;
 	position: absolute;
     top:0;
     bottom: 0;
@@ -33,7 +33,35 @@ canvas{
     right: 0;
     margin:auto;
     display: none;
+    z-index: 0;
+}
 
+nav{
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  font-size: 2vw;
+  font-family: 'Betty Noir Regular';
+  color: white;
+  display: none;
+  z-index: 1;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  padding-top: 20px;
+}
+
+nav li a{
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:visited{
+  color: white;
 }
 
 @font-face{

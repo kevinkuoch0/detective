@@ -6,8 +6,16 @@
   });
 </script> -->
 
-  <%= javascript_include_tag  'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
 
-<audio id="noir-song" src="noir-song.mp3" loop="loop"></audio>
 
+ <nav>
+ 	<ul>
+ 		<li><a id="start" href="#" >Start</a></li>
+ 		<li><a id="credits" href="#" onclick="alert('credits');">Credits</a></li>
+ 	</ul>
+ </nav>
+
+<!-- <audio id="noir-song" src="noir-song.mp3" loop="loop"></audio> -->
+
+
+<%= javascript_include_tag  'application', 'data-turbolinks-track' => true %>
