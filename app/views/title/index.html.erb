@@ -5,19 +5,17 @@
     $('.detective-img').imageloader();
   });
 </script> -->
-  <%= javascript_include_tag  'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
 
 <!-- <audio id="noir-song" src="noir-song.mp3" loop="loop"></audio> -->
 
-
-<div class="menu">
+<%= javascript_include_tag  'application', 'data-turbolinks-track' => true %>
 
 <nav>
   <ul>
-  <li>Start</li>
-  <li>Credits</li>
+    <li><a id="start" href="#">Start</a></li>
+    <li><a id="credits" href="#" onclick="alert('credits');">Credits</a></li>
   </ul>
 </nav>
 
 </div>
+

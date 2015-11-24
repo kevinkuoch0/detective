@@ -44,6 +44,7 @@ nav{
   color: white;
   font-family: "Betty Noir Regular";
   font-size: 2vw;
+  display: none;
 }
 
 nav ul{
@@ -55,6 +56,13 @@ nav li{
   padding-bottom: 20px;
 }
 
+nav li a:visited{
+  color:white;
+}
+
+nav li a:link{
+  text-decoration: none;
+}
 
 @font-face{
   font-family: 'Betty Noir Regular';

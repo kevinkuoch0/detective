@@ -33,7 +33,6 @@ var background = new Image();
 background.src = "/assets/title(1).jpg";
 
 
-
 var position = {x : 410, y : 238};
 
 document.body.appendChild(canvas);
@@ -99,8 +98,12 @@ setInterval(draw, 3500/60);
 
 $(document).ready(function() {
  $("canvas").fadeIn(7000);
-});
+ $("nav").fadeIn(7000);
+ // $("#noir-song").get(0).play();
 
-$(document).ready(function() {
-    $("#noir-song").get(0).play();
+ console.log($("#start"));
+ $("#start").click(function() {
+  $("canvas").fadeOut(3000);
+  // alert("start");
+ });
 });
