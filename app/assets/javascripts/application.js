@@ -122,7 +122,22 @@ $(document).ready(function() {
     $("#start").fadeOut(1000);
     $("#credits").fadeOut(1000);
     $("#alleyway-bg").fadeIn(1000);
+    $("#alley-sound").get(0).play();
     $("#bootswalking").get(0).play();
+    $("#alleyway-bg").on("click", function() {
+         $({blurRadius: 0}).animate({blurRadius: 10}, {
+       duration: 500,
+       easing: 'swing', // or "linear"
+                        // use jQuery UI or Easing plugin for more options
+       step: function() {
+           console.log(this.blurRadius);
+           $('#alleyway-bg').css({
+               "-webkit-filter": "blur("+this.blurRadius+"px)",
+               "filter": "blur("+this.blurRadius+"px)"
+           });
+       }
+   });
+ });
   });
 
  // music toggle next 11 lines
