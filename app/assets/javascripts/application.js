@@ -116,11 +116,13 @@ $(document).ready(function() {
        $('#credits-list').stop();
     });
   });  //end of the credits
-  
+  //Start button for game
  $("#start").on("click", function() {
     $("canvas").fadeOut(1000);
     $("#start").fadeOut(1000);
     $("#credits").fadeOut(1000);
+    $("#alleyway-bg").fadeIn(1000);
+    $("#bootswalking").get(0).play();
   });
 
  // music toggle next 11 lines
