@@ -90,28 +90,77 @@ nav li a:link{
   padding: 5px;
 }
 
+#credits-container{
+  overflow: hidden;
+}
+
+#credits-list{
+  display: block;
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  top: 90%;
+  left: 20%;
+}
+
+#credits-list h3{
+  font-family: "Betty Noir Regular";
+  font-size: 2vw;
+  color: white;
+  padding-top: 5px;
+}
+
+#credits-bg{
+/*the code below this activates the canvas border, turn it on to visibly see how big the canvas is */
+
+  /*border: 1px solid blue;*/
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:auto;
+  display: none;
+  width: 63%;
+  height: 81%;
+}
+
+/* needed for credits animation */
+#bottom-bar{
+  position: absolute;
+  bottom: 0;
+  height: 9.5%;
+  width: 100%;
+  background-color: black;
+}
+
+#back-div{
+  position: absolute;
+  bottom: 13%;
+  right: 20%;
+  font-family: "Betty Noir Regular";
+  font-size: 2vw;
+  color: white;
+  display: none;
+}
+
+#back-div a{
+  text-decoration: none;
+}
+
+#back-div a:visited{
+  color: white;
+}
+
+/* unneccessary now? */
 /*img {
   display: none;
   color:white;
   border:1px solid blue;
 }*/
 
-#creds{
-/*the code below this activates the canvas border, turn it on to visibly see how big the canvas is */
-
-/*  border: 1px solid blue;  
-*/  position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin:auto;
-    display: none;
-    width: 63%;
-    height: 81%;
-}
 /*position for the credits location*/
-p#names{
+/*p#names{
   src: url('/assets/bettynoir.ttf');
   font-family: "Betty Noir Regular";
   position: absolute;
@@ -119,6 +168,6 @@ p#names{
   color: white;
   bottom: 60%;
   right: 70%;
-}
+}*/
 
 

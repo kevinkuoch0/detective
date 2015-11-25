@@ -93,6 +93,8 @@ var draw = function(){
 setInterval(draw, 3500/60);
  // ***This comment ends the above code at line 67***
 
+
+
 $(document).ready(function() {
  $("canvas").fadeIn(3000);
  $("nav").fadeIn(3000);
@@ -100,9 +102,19 @@ $(document).ready(function() {
   //click function for the credits
   $("#credits").on("click",function() {
     $("canvas").fadeOut(1000);
-    $("#start").fadeOut(1000);
-    $("#credits").fadeOut(1000);
-    $("img").fadeIn(1000);
+    $("nav").fadeOut(1000);
+    $("#back-div").fadeIn(1000);
+    $("#credits-bg").fadeIn(1000);
+    $('#credits-list').show().animate({top:"6%"}, 20000);
+    $("#back-to-menu").on("click", function() {
+       $("canvas").fadeIn(3000);
+       $("nav").fadeIn(3000);
+       $("#credits-bg").fadeOut(3000);
+       
+       $('#credits-list').fadeOut(3000).animate({top:"90%"}, 0);
+       $('#back-div').fadeOut(3000);
+       $('#credits-list').stop();
+    });
   });  //end of the credits
   
  $("#start").on("click", function() {
@@ -123,7 +135,8 @@ $(document).ready(function() {
     $("#sound-off").show();
     $("#noir-song").get(0).play();
  });
-  
+
+
 }); // End of the loading document on line 115
 
 
