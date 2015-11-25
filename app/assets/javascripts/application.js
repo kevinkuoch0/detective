@@ -110,6 +110,20 @@ $(document).ready(function() {
     $("#start").fadeOut(1000);
     $("#credits").fadeOut(1000);
   });
+
+ // music toggle next 11 lines
+ $("#sound-off").on("click", function() {
+    $("#sound-off").hide();
+    $("#sound-on").show();
+    $("#noir-song").get(0).pause();
+    $("#noir-song").get(0).currentTime = 0;
+ });
+  $("#sound-on").on("click", function() {
+    $("#sound-on").hide();
+    $("#sound-off").show();
+    $("#noir-song").get(0).play();
+ });
+  
 }); // End of the loading document on line 115
 
 

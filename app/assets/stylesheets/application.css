@@ -70,13 +70,33 @@ nav li a:link{
   src: url('/assets/bettynoir.ttf');
 }
 
+#sound-on img{
+  width: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+}
+
+#sound-on{
+  display: none;
+}
+
+#sound-off img{
+  width: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+}
+
 /*img {
   display: none;
   color:white;
   border:1px solid blue;
 }*/
 
-img {
+#creds{
 /*the code below this activates the canvas border, turn it on to visibly see how big the canvas is */
 
 /*  border: 1px solid blue;  
@@ -100,3 +120,5 @@ p#names{
   bottom: 60%;
   right: 70%;
 }
+
+
