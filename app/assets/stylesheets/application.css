@@ -168,6 +168,52 @@ nav li a:link{
   height: 81%;
 }
 
+#typing-container{
+  display: none;
+  position: absolute;
+  top: 87%;
+  left: 18%;
+  z-index: 1;
+  font-size: 2vw;
+}
+
+#typing p{
+  color: black; 
+  font-family: "Limelight";
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* unneccessary now? */
 /*img {
   display: none;

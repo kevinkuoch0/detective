@@ -125,7 +125,7 @@ $(document).ready(function() {
     $("#alley-sound").get(0).play();
     $("#bootswalking").get(0).play();
     $("#alleyway-bg").on("click", function() {
-         $({blurRadius: 0}).animate({blurRadius: 10}, {
+       $({blurRadius: 0}).animate({blurRadius: 10}, {
        duration: 500,
        easing: 'swing', // or "linear"
                         // use jQuery UI or Easing plugin for more options
@@ -137,8 +137,10 @@ $(document).ready(function() {
            });
        }
    });
+       $("#typing-container").show();
+       $("#type-sound").get(0).play();
  });
-  });
+});
 
  // music toggle next 11 lines
  $("#sound-off").on("click", function() {
