@@ -99,7 +99,7 @@ nav li a:link{
   width: 250px;
   height: 100%;
   position: absolute;
-  top: 90%;
+  top: 100%;
   left: 20%;
 }
 
@@ -132,6 +132,7 @@ nav li a:link{
   height: 9.5%;
   width: 100%;
   background-color: black;
+  display: none;
 }
 
 #back-div{
@@ -171,7 +172,7 @@ nav li a:link{
 #typing-container{
   display: none;
   position: absolute;
-  top: 87%;
+  top: 84%;
   left: 18%;
   z-index: 1;
   font-size: 2vw;

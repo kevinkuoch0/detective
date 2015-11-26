@@ -101,19 +101,22 @@ $(document).ready(function() {
  $("#noir-song").get(0).play();
   //click function for the credits
   $("#credits").on("click",function() {
+    $('#bottom-bar').fadeIn(0);
     $("canvas").fadeOut(1000);
     $("nav").fadeOut(1000);
     $("#back-div").fadeIn(1000);
     $("#credits-bg").fadeIn(1000);
-    $('#credits-list').show().animate({top:"6%"}, 20000);
+    $('#credits-list').show().animate({top:"6%"}, 15000);
     $("#back-to-menu").on("click", function() {
        $("canvas").fadeIn(3000);
        $("nav").fadeIn(3000);
        $("#credits-bg").fadeOut(3000);
-       
-       $('#credits-list').fadeOut(3000).animate({top:"90%"}, 0);
+       // $('#credits-list').fadeOut(3000).;
        $('#back-div').fadeOut(3000);
-       $('#credits-list').stop();
+       $('#credits-list').stop().animate({top:"100%"}, 0).fadeOut(3000, function(){ 
+          $('#bottom-bar').fadeOut(3000);
+        });
+       
     });
   });  //end of the credits
   //Start button for game
@@ -121,26 +124,25 @@ $(document).ready(function() {
     $("canvas").fadeOut(1000);
     $("#start").fadeOut(1000);
     $("#credits").fadeOut(1000);
-    $("#alleyway-bg").fadeIn(1000);
     $("#alley-sound").get(0).play();
     $("#bootswalking").get(0).play();
-    $("#alleyway-bg").on("click", function() {
-       $({blurRadius: 0}).animate({blurRadius: 10}, {
-       duration: 500,
-       easing: 'swing', // or "linear"
+    $("#alleyway-bg").fadeIn(4000, function() {
+      $({blurRadius: 0}).animate({blurRadius: 10}, {
+        duration: 500,
+        easing: 'swing', // or "linear"
                         // use jQuery UI or Easing plugin for more options
-       step: function() {
-           console.log(this.blurRadius);
-           $('#alleyway-bg').css({
-               "-webkit-filter": "blur("+this.blurRadius+"px)",
-               "filter": "blur("+this.blurRadius+"px)"
-           });
-       }
-   });
-       $("#typing-container").show();
-       $("#type-sound").get(0).play();
- });
-});
+        step: function() {
+         console.log(this.blurRadius);
+         $('#alleyway-bg').css({
+           "-webkit-filter": "blur("+this.blurRadius+"px)",
+           "filter": "blur("+this.blurRadius+"px)"
+         });
+        }
+      });
+      $("#typing-container").show();
+      $("#type-sound").get(0).play();
+    });
+  });
 
  // music toggle next 11 lines
  $("#sound-off").on("click", function() {
