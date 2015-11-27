@@ -168,6 +168,34 @@ nav li a:link{
   width: 63%;
   height: 81%;
 }
+#office-bg{
+/*the code below this activates the canvas border, turn it on to visibly see how big the canvas is */
+
+  /*border: 1px solid blue;*/
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:auto;
+  display: none;
+  width: 63%;
+  height: 81%;
+}
+#phone-bg{
+/*the code below this activates the canvas border, turn it on to visibly see how big the canvas is */
+
+  /*border: 1px solid blue;*/
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:auto;
+  display: none;
+  width: 63%;
+  height: 81%;
+}
 
 #typing-container{
   display: none;
@@ -179,6 +207,46 @@ nav li a:link{
 }
 
 #typing p{
+  color: black; 
+  font-family: "Limelight";
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+
+#typing-container2{
+  display: none;
+  position: absolute;
+  top: 84%;
+  left: 18%;
+  z-index: 1;
+  font-size: 2vw;
+}
+
+#typing2 p{
+  color: black; 
+  font-family: "Limelight";
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+#typing-container3{
+  display: none;
+  position: absolute;
+  top: 84%;
+  left: 18%;
+  z-index: 1;
+  font-size: 2vw;
+}
+#typing3 p{
   color: black; 
   font-family: "Limelight";
   font-weight: bold;

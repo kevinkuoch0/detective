@@ -141,8 +141,52 @@ $(document).ready(function() {
       });
       $("#typing-container").show();
       $("#type-sound").get(0).play();
-    });
-  });
+    }); // transition to the office scene below, above is first scene ending
+    $("#alleyway-bg").on("click", function() {
+      $("#typing-container").fadeOut(1000);
+      $(this).fadeOut(4000); //Fading out the first scene
+      $("#officenoise-sound").get(0).play();
+      $("#office-bg").fadeIn(6000, function() {
+
+        $({blurRadius: 0}).animate({blurRadius: 10}, {
+          duration: 500,
+          easing: 'swing', // or "linear"
+                          // use jQuery UI or Easing plugin for more options
+          step: function() {
+           console.log(this.blurRadius);
+           $('#office-bg').css({
+             "-webkit-filter": "blur("+this.blurRadius+"px)",
+             "filter": "blur("+this.blurRadius+"px)"
+           });
+          }
+        });
+        $("#typing-container2").show();
+        $("#type-sound").get(0).play();
+      }); // end of the blur function
+    }); // Ending part of the office scene and below is start of phone-scene
+    $("#office-bg").on("click", function (){
+      $("#typing-container2").fadeOut(1000);
+      $(this).fadeOut(4000); // Start of phone-bg scene
+      $("#phonenoise-sound").get(0).play();
+      $("#phone-bg").fadeIn(8000, function() {
+
+        $({blurRadius: 0}).animate({blurRadius: 10}, {
+          duration: 500,
+          easing: 'swing', // or "linear"
+                          // use jQuery UI or Easing plugin for more options
+          step: function() {
+           console.log(this.blurRadius);
+           $('#phone-bg').css({
+             "-webkit-filter": "blur("+this.blurRadius+"px)",
+             "filter": "blur("+this.blurRadius+"px)"
+           });
+          }
+        });
+        $("#typing-container3").show();
+        $("#type-sound").get(0).play();
+      }); // end of the blur function
+    }); //Ending of the phone scene
+  }); //ending for start function
 
  // music toggle next 11 lines
  $("#sound-off").on("click", function() {
