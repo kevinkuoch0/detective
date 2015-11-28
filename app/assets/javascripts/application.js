@@ -106,7 +106,7 @@ $(document).ready(function() {
     $("nav").fadeOut(1000);
     $("#back-div").fadeIn(1000);
     $("#credits-bg").fadeIn(1000);
-    $('#credits-list').show().animate({top:"6%"}, 15000);
+    $('#credits-list').show().animate({top:"7%"}, 15000);
     $("#back-to-menu").on("click", function() {
        $("canvas").fadeIn(3000);
        $("nav").fadeIn(3000);
