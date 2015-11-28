@@ -275,7 +275,7 @@ nav li a:link{
 } 
 
 #film-border-top{
-  background-image: url(/assets/film-strip-dark.png);
+  background-image: url(/assets/film-strip.png);
   position: absolute;
   top: 0;
   left: 0;
@@ -285,7 +285,7 @@ nav li a:link{
 }
 
 #film-border-bottom{
-  background-image: url(/assets/film-strip-dark.png);
+  background-image: url(/assets/film-strip.png);
   position: absolute;
   bottom: 0;
   left: 0;
