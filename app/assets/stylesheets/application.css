@@ -63,6 +63,7 @@ nav li a:visited{
 
 nav li a:link{
   text-decoration: none;
+  color: white;
 }
 
 @font-face{
@@ -87,6 +88,14 @@ nav li a:link{
   position: absolute;
   top: 0;
   right: 0;
+  padding: 5px;
+}
+
+#music-icon img{
+  width: 25px;
+  position: absolute;
+  top: 2px;
+  right: 40px;
   padding: 5px;
 }
 
