@@ -63,6 +63,7 @@ nav li a:visited{
 
 nav li a:link{
   text-decoration: none;
+  color:white;
 }
 
 @font-face{
@@ -238,6 +239,7 @@ nav li a:link{
   width: 30em;
   animation: type 4s steps(60, end); 
 }
+
 #typing-container3{
   display: none;
   position: absolute;
@@ -246,6 +248,8 @@ nav li a:link{
   z-index: 1;
   font-size: 2vw;
 }
+
+
 #typing3 p{
   color: black; 
   font-family: "Limelight";
@@ -262,9 +266,25 @@ nav li a:link{
   from { width: 0; } 
 } 
 
+#narration-container1{
+/*  display: none;*/
+  position: absolute;
+  top: 11%;
+  left: 18%;
+  z-index: 1;
+  font-size: 2vw;
+  width: 63%;
+}
 
 
-
+#narration1 p{
+  color: black; 
+  font-family: "Limelight";
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  overflow: hidden;
+}
 
 
 
