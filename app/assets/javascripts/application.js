@@ -124,9 +124,11 @@ $(document).ready(function() {
     $("canvas").fadeOut(1000);
     $("#start").fadeOut(1000);
     $("#credits").fadeOut(1000);
+    $("#quote-container").fadeIn(4000);
+    $("#quote-container").fadeOut(4000);
     $("#alley-sound").get(0).play();
     $("#bootswalking").get(0).play();
-    $("#alleyway-bg").fadeIn(4000, function() {
+    $("#alleyway-bg").delay(8000).fadeIn(4000, function() {
       $({blurRadius: 0}).animate({blurRadius: 10}, {
         duration: 500,
         easing: 'swing', // or "linear"
