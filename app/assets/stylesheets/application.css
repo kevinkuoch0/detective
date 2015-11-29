@@ -218,7 +218,20 @@ nav li a:link{
   width: 63%;
   height: 81%;
 }
+#gamestart-bg{
+/*the code below this activates the canvas border, turn it on to visibly see how big the canvas is */
 
+  /*border: 1px solid blue;*/
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:auto;
+  display: none;
+  width: 63%;
+  height: 81%;
+}
 #typing-container{
   display: none;
   position: absolute;

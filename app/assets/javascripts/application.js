@@ -172,7 +172,7 @@ $(document).ready(function() {
                   $("#type-sound").get(0).play();
                 }); // end of the blur function
               }); // Ending part of the office scene and below is start of phone-scene
-            });     
+            });    
           });
         });    
       });
@@ -199,7 +199,12 @@ $(document).ready(function() {
         $("#typing-container3").show();
         $("#type-sound").get(0).play();
       }); // end of the blur function
-    }); //Ending of the phone scene
+    }); //Ending of the phone scene and below is start of gamestart
+    $("#phone-bg").on("click", function (){
+      $("#typing-container3").fadeOut(1000);
+      $(this).fadeOut(4000);
+      $("#gamestart-bg").fadeIn(8000);
+    }); //ending of the gamestart scene
   }); //ending for start function
 
  // music toggle next 11 lines
