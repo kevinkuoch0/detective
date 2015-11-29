@@ -353,6 +353,84 @@ nav li a:link{
   margin: 10px 0 0 9px;
 }
 
+
+
+
+
+
+
+
+
+#office-narration-container{
+  position: absolute;
+  top: 12%;
+  left: 19%;
+  z-index: 1;
+  width: 55%;
+}
+
+#office-narration1{
+  display:none;
+}
+
+#office-narration1 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.2vw;
+  margin: 10px 0 0 9px;
+}
+
+#office-narration2{
+  display:none;
+}
+
+#office-narration2 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.2vw;
+  margin: 10px 0 0 9px;
+}
+
+#office-narration3{
+  display:none;
+}
+
+#office-narration3 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.05vw;
+  margin: 10px 0 0 9px;
+}
+
+#office-narration4{
+  display:none;
+}
+
+#office-narration4 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.05vw;
+  margin: 10px 0 0 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #film-border-top{
   background-image: url(/assets/film-strip.png);
   position: absolute;

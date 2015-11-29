@@ -183,7 +183,7 @@ $(document).ready(function() {
       $(this).fadeOut(4000); // Start of phone-bg scene
       $("#phonenoise-sound").get(0).play();
       $("#phone-bg").fadeIn(8000, function() {
-
+        $("#phone-bg").fadeTo(500, 0.1);
         $({blurRadius: 0}).animate({blurRadius: 10}, {
           duration: 500,
           easing: 'swing', // or "linear"
