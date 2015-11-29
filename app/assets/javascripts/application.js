@@ -129,6 +129,7 @@ $(document).ready(function() {
     $("#alley-sound").get(0).play();
     $("#bootswalking").get(0).play();
     $("#alleyway-bg").delay(8000).fadeIn(4000, function() {
+      $("#alleyway-bg").fadeTo(500, 0.1);
       $({blurRadius: 0}).animate({blurRadius: 10}, {
         duration: 500,
         easing: 'swing', // or "linear"
@@ -143,9 +144,11 @@ $(document).ready(function() {
       });
       $("#typing-container").show();
       $("#type-sound").get(0).play();
+      $("#narration-container").delay(2000).fadeIn(3000);
     }); // transition to the office scene below, above is first scene ending
     $("#alleyway-bg").on("click", function() {
       $("#typing-container").fadeOut(1000);
+      $("#narration-container").fadeOut(1000);
       $(this).fadeOut(4000); //Fading out the first scene
       $("#officenoise-sound").get(0).play();
       $("#office-bg").fadeIn(6000, function() {

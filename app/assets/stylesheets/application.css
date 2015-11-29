@@ -76,10 +76,15 @@ nav li a:link{
   src: url('/assets/bettynoir.ttf');
 }
 
+@font-face{
+  font-family: 'Journal';
+  src: url('/assets/journal.ttf');
+}
+
 #sound-on img{
   width: 30px;
   position: absolute;
-  top: 67px;
+  top: 11%;
   right: 0;
   padding: 5px;
   z-index: 9999;
@@ -92,7 +97,7 @@ nav li a:link{
 #sound-off img{
   width: 30px;
   position: absolute;
-  top: 67px;
+  top: 11%;
   right: 0;
   padding: 5px;
   z-index: 9999;
@@ -101,7 +106,7 @@ nav li a:link{
 #music-icon img{
   width: 25px;
   position: absolute;
-  top: 69px;
+  top: 11.3%;
   right: 40px;
   padding: 5px;
   z-index: 9999;
@@ -224,7 +229,7 @@ nav li a:link{
 }
 
 #typing p{
-  color: black; 
+  color: white; 
   font-family: "Limelight";
   font-weight: bold;
   font-size: 20px;
@@ -299,6 +304,26 @@ nav li a:link{
   font-family: "Riesling";
   font-weight: bold;
   font-size: 3vw;
+  margin: 10px 0 0 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#narration-container{
+  display: none;
+  position: absolute;
+  top: 12%;
+  left: 18%;
+  z-index: 1;
+  width: 63%;
+}
+
+
+#narration1 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 1.8vw;
   margin: 10px 0 0 10px;
   overflow: hidden;
 }
