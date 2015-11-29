@@ -143,8 +143,18 @@ $(document).ready(function() {
       $("#typing-container").show();
       $("#type-sound").get(0).play();
       $("#narration1").delay(2000).fadeIn(3000);
+      $("#alleyway-bg").click(function() {
+        $("#narration1").fadeOut(1000, function() {
+          $("#narration2").fadeIn(1000);
+          $("#alleyway-bg").click(function() {
+            $("#narration2").fadeOut(1000, function() {
+              $("#narration3").fadeIn(1000);
+            });     
+          });
+        });    
+      });
     }); // transition to the office scene below, above is first scene ending
-    $("#alleyway-bg").on("click", function() {
+    $("#narration3").on("click", function() {
       $("#typing-container").fadeOut(1000);
       $("#narration-container").fadeOut(1000);
       $(this).fadeOut(4000); //Fading out the first scene
