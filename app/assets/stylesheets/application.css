@@ -310,7 +310,6 @@ nav li a:link{
 }
 
 #narration-container{
-  display: none;
   position: absolute;
   top: 12%;
   left: 18%;
@@ -318,12 +317,41 @@ nav li a:link{
   width: 63%;
 }
 
+#narration1{
+  display:none;
+}
 
 #narration1 p{
   color: white; 
   font-family: "Journal";
   font-weight: bold;
-  font-size: 1.8vw;
+  font-size: 3.2vw;
+  margin: 10px 0 0 10px;
+  overflow: hidden;
+}
+
+#narration2{
+  display:none;
+}
+
+#narration2 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.2vw;
+  margin: 10px 0 0 10px;
+  overflow: hidden;
+}
+
+#narration3{
+  display:none;
+}
+
+#narration3 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.2vw;
   margin: 10px 0 0 10px;
   overflow: hidden;
 }

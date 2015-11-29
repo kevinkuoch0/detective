@@ -93,8 +93,6 @@ var draw = function(){
 setInterval(draw, 3500/60);
  // ***This comment ends the above code at line 67***
 
-
-
 $(document).ready(function() {
  $("canvas").fadeIn(3000);
  $("nav").fadeIn(3000);
@@ -144,7 +142,7 @@ $(document).ready(function() {
       });
       $("#typing-container").show();
       $("#type-sound").get(0).play();
-      $("#narration-container").delay(2000).fadeIn(3000);
+      $("#narration1").delay(2000).fadeIn(3000);
     }); // transition to the office scene below, above is first scene ending
     $("#alleyway-bg").on("click", function() {
       $("#typing-container").fadeOut(1000);
