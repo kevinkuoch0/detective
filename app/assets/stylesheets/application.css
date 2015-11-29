@@ -295,7 +295,7 @@ nav li a:link{
   left: 20%;
   z-index: 1;
   font-size: 2vw;
-  width: 63%;
+  width: 65%;
 }
 
 
@@ -312,9 +312,9 @@ nav li a:link{
 #narration-container{
   position: absolute;
   top: 12%;
-  left: 18%;
+  left: 19%;
   z-index: 1;
-  width: 63%;
+  width: 55%;
 }
 
 #narration1{
@@ -326,8 +326,7 @@ nav li a:link{
   font-family: "Journal";
   font-weight: bold;
   font-size: 3.2vw;
-  margin: 10px 0 0 10px;
-  overflow: hidden;
+  margin: 10px 0 0 9px;
 }
 
 #narration2{
@@ -339,8 +338,7 @@ nav li a:link{
   font-family: "Journal";
   font-weight: bold;
   font-size: 3.2vw;
-  margin: 10px 0 0 10px;
-  overflow: hidden;
+  margin: 10px 0 0 9px;
 }
 
 #narration3{
@@ -351,9 +349,8 @@ nav li a:link{
   color: white; 
   font-family: "Journal";
   font-weight: bold;
-  font-size: 3.2vw;
-  margin: 10px 0 0 10px;
-  overflow: hidden;
+  font-size: 3.05vw;
+  margin: 10px 0 0 9px;
 }
 
 #film-border-top{
