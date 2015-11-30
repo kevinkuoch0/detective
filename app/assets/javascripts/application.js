@@ -141,20 +141,22 @@ $(document).ready(function() {
       $("#typing-container").show();
       $("#type-sound").get(0).play();
       $("#narration1").delay(2000).fadeIn(3000); //first text fading in
-      $("#continue-container").delay(8000).fadeIn(100);
-      $("#alleyway-bg, #narration1").click(function() { //start of the click narration
+      $("#continue-container").delay(4000).fadeIn(100);
+      $("#continue-container").click(function() { //start of the click narration
         $("#continue-container").stop().hide();
         $("#narration1").fadeOut(1000, function() {  //first text fading out
           $("#narration2").fadeIn(1000);  //second text fading in
-          $("#continue-container").delay(8000).fadeIn(100);
-          $("#narration2, #alleyway-bg").click(function() {  // second text fading out 
+          $("#continue-container").delay(2000).fadeIn(100);
+          $("#continue-container").click(function() {  // second text fading out 
             $("#continue-container").stop().hide();
             $("#narration2").fadeOut(1000, function() { //third fading in
               $("#narration3").fadeIn(1000);
-              $("#continue-container").delay(8000).fadeIn(100);
-              $("#alleyway-bg, #narration3").on("click", function() {
+              $("#continue-container").delay(2000).fadeIn(100);
+              $("#continue-container").on("click", function() {
                 $("#continue-container").stop().hide();
+                $("#narration1").hide();
                 $("#narration2").hide();
+                $("#narration3").hide();
                 $("#typing-container").fadeOut(1000);
                 $("#narration-container").fadeOut(1000); //fading out narration container !! where is it appearing
                 $("#alleyway-bg").fadeOut(4000); //Fading out the first scene
@@ -176,33 +178,34 @@ $(document).ready(function() {
                   $("#typing-container2").show();
                   $("#type-sound").get(0).play();
                   $("#typing-container2").delay(3000).fadeOut(1000); //Either this is faded or the text get smaller. It interferes with the text
-                  $("#office-narration1").delay(2000).fadeIn(1000);
-                  $("#continue-container").delay(8000).fadeIn(100);
-                  $("#office-narration1").on("click", function () { //start of office narration function
+                  $("#office-narration1").delay(2000).fadeIn(1000,function(){
+                    $("#continue-container").delay(3000).fadeIn(100);
+                  });
+                  $("#continue-container").on("click", function () { //start of office narration function
                     $("#continue-container").stop().hide();
-                    $(this).fadeOut(1000, function() {
+                    $("#office-narration1").fadeOut(1000, function() {
                       $("#office-narration2").fadeIn(1000);
-                      $("#continue-container").delay(8000).fadeIn(100);
-                      $("#office-narration2").on("click", function () {
+                      $("#continue-container").delay(2000).fadeIn(100);
+                      $("#continue-container").on("click", function () {
                         $("#continue-container").stop().hide();
-                        $(this).fadeOut(1000, function() {
+                        $("#office-narration2").fadeOut(1000, function() {
                           $("#office-narration3").fadeIn(1000);
-                          $("#continue-container").delay(8000).fadeIn(100);
-                          $("#office-narration3").on("click", function (){
+                          $("#continue-container").delay(2000).fadeIn(100);
+                          $("#continue-container").on("click", function (){
                             $("#continue-container").stop().hide();
-                            $(this).fadeOut(1000, function() {
+                            $("#office-narration3").fadeOut(1000, function() {
                               $("#office-narration4").fadeIn(1000);
-                              $("#continue-container").delay(8000).fadeIn(100);
-                              $("#office-narration4").on("click", function (){
+                              $("#continue-container").delay(2000).fadeIn(100);
+                              $("#continue-container").on("click", function (){
                                 $("#continue-container").stop().hide();
-                                $(this).fadeOut(1000, function(){
+                                $("#office-narration4").fadeOut(1000, function(){
                                   $("#office-narration5").fadeIn(1000);
-                                  $("#continue-container").delay(8000).fadeIn(100);
-                                  $("#office-narration5").on("click",function(){
+                                  $("#continue-container").delay(2000).fadeIn(100);
+                                  $("#continue-container").on("click",function(){
                                     $("#continue-container").stop().hide();
-                                    $(this).fadeOut(1000);                              
+                                    $("#office-narration5").fadeOut(1000);                              
                                     $("#typing-container2").fadeOut(1000);
-                                    $(this).fadeOut(4000); // Start of phone-bg scene
+                                    $("#office-bg").fadeOut(4000); // Start of phone-bg scene
                                     $("#phonenoise-sound").get(0).play();
                                     $("#phone-bg").fadeIn(8000, function() {
                                       $("#phone-bg").fadeTo(500, 0.1);
@@ -221,28 +224,28 @@ $(document).ready(function() {
                                       $("#type-sound").get(0).play();
                                       $("#typing-container3").show(function() {
                                         $('#phone-narration1').fadeIn(1000);
-                                        $("#continue-container").delay(8000).fadeIn(100);
-                                        $('#phone-bg, #phone-narration1').on("click", function(){
+                                        $("#continue-container").delay(2000).fadeIn(100);
+                                        $("#continue-container").on("click", function(){
                                           $("#continue-container").stop().hide();
                                           $('#phone-narration1').fadeOut(1000,function(){
                                             $('#phone-narration2').fadeIn(1000);
-                                            $("#continue-container").delay(8000).fadeIn(100);
-                                            $('#phone-bg, #phone-narration2').on("click", function(){
+                                            $("#continue-container").delay(2000).fadeIn(100);
+                                            $("#continue-container").on("click", function(){
                                               $("#continue-container").stop().hide();
                                               $('#phone-narration2').fadeOut(1000,function(){
                                                 $('#phone-narration3').fadeIn(1000);
-                                                $("#continue-container").delay(8000).fadeIn(100);
-                                                $('#phone-bg, #phone-narration3').on("click", function(){
+                                                $("#continue-container").delay(2000).fadeIn(100);
+                                                $("#continue-container").on("click", function(){
                                                   $("#continue-container").stop().hide();
                                                   $('#phone-narration3').fadeOut(1000,function(){
                                                     $('#phone-narration4').fadeIn(1000);
-                                                    $("#continue-container").delay(8000).fadeIn(100);
-                                                    $('#phone-bg, #phone-narration4').on("click", function(){
+                                                    $("#continue-container").delay(2000).fadeIn(100);
+                                                    $("#continue-container").on("click", function(){
                                                       $("#continue-container").stop().hide();
                                                       $('#phone-narration4').fadeOut(1000,function(){
                                                         $('#phone-narration5').fadeIn(1000);
-                                                        $("#continue-container").delay(8000).fadeIn(100);
-                                                        $("#phone-bg, #phone-narration5").on("click", function (){
+                                                        $("#continue-container").delay(2000).fadeIn(100);
+                                                        $("#continue-container").on("click", function (){
                                                           $("#continue-container").stop().hide();
                                                           $("#typing-container3").fadeOut(100);
                                                           $('#phone-narration5').fadeOut(1000,function(){

@@ -367,10 +367,14 @@ nav li a:link{
   font-family: "Journal";
 }
 
+#continue p a:link{
+  color: white;
+  text-decoration: none;
+}
 
-
-
-
+#continue p a:visited{
+  color: white;
+}
 
 
 
