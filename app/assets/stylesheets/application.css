@@ -459,8 +459,75 @@ nav li a:link{
 
 
 
+#phone-container{
+  position: absolute;
+  top: 12%;
+  left: 19%;
+  z-index: 1;
+  width: 55%;
+}
+
+#phone-narration1{
+  display:none;
+}
+
+#phone-narration1 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.2vw;
+  margin: 10px 0 0 9px;
+}
+
+#phone-narration2{
+  display:none;
+}
+
+#phone-narration2 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.2vw;
+  margin: 10px 0 0 9px;
+}
+
+#phone-narration3{
+  display:none;
+}
+
+#phone-narration3 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.05vw;
+  margin: 10px 0 0 9px;
+}
 
 
+
+#phone-narration4{
+  display:none;
+}
+
+#phone-narration4 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.05vw;
+  margin: 10px 0 0 9px;
+}
+
+#phone-narration5{
+  display:none;
+}
+
+#phone-narration5 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.05vw;
+  margin: 10px 0 0 9px;
+}
 
 
 
