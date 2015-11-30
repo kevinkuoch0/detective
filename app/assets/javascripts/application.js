@@ -150,6 +150,7 @@ $(document).ready(function() {
             $("#narration2").fadeOut(1000, function() { //third fading in
               $("#narration3").fadeIn(1000);
               $("#alleyway-bg, #narration3").on("click", function() {
+                $("#narration2").hide();
                 $("#typing-container").fadeOut(1000);
                 $("#narration-container").fadeOut(1000); //fading out narration container !! where is it appearing
                 $("#alleyway-bg").fadeOut(4000); //Fading out the first scene
@@ -173,19 +174,23 @@ $(document).ready(function() {
                   $("#typing-container2").delay(3000).fadeOut(1000); //Either this is faded or the text get smaller. It interferes with the text
                   $("#office-narration1").delay(2000).fadeIn(1000);
                   $("#office-narration1").on("click", function () { //start of office narration function
-                        $(this).fadeOut(1000);
+                        $(this).fadeOut(1000, function() {
                         $("#office-narration2").fadeIn(1000);
-                    $("#office-narration2").on("click", function () {
-                        $(this).fadeOut(1000);
+                    $("#office-narration2, #office-bg").on("click", function () {
+                        $(this).fadeOut(1000, function() {
                         $("#office-narration3").fadeIn(1000);
-                     $("#office-narration3").on("click", function (){
-                            $(this).fadeOut(1000);
-                            $("#office-narration4").fadeIn(1500);
+                     $("#office-narration3, #office-bg").on("click", function (){
+                            $(this).fadeOut(1000, function() {
+                            $("#office-narration4").fadeIn(1000);
                         $("#office-narration4").on("click", function (){
-                            $(this).fadeOut(1000);
-                          $("#office-narration5").fadeIn(1500);
+                            $(this).fadeOut(1000, function(){
+                          $("#office-narration5").fadeIn(1000);
                             $("#office-narration5").on("click",function(){
                               $(this).fadeOut(1000);
+                                    });
+                                  });
+                                });
+                              });
                             }); //end of office narration5 CLICK function
                         }); //end of office narration4 CLICK function
                      }); //end of office narration3 CLICK function 
