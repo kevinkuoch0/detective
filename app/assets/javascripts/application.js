@@ -120,11 +120,11 @@ $(document).ready(function() {
     $("canvas").fadeOut(1000);
     $("#start").fadeOut(1000);
     $("#credits").fadeOut(1000);
-    $("#quote-container").fadeIn(4000);
-    $("#quote-container").fadeOut(4000);
-    $("#alley-sound").get(0).play();
-    $("#bootswalking").get(0).play();
-    $("#alleyway-bg").delay(8000).fadeIn(4000, function() {
+    $("#quote-container").fadeIn(5000);
+    $("#quote-container").fadeOut(5000);
+    $("#alley-sound").delay(2000).get(0).play();
+    $("#bootswalking").delay(2000).get(0).play();
+    $("#alleyway-bg").delay(10000).fadeIn(4000, function() {
       $("#alleyway-bg").fadeTo(500, 0.1);
       $({blurRadius: 0}).animate({blurRadius: 10}, {
         duration: 500,
@@ -232,30 +232,7 @@ $(document).ready(function() {
                                               $('#phone-narration2').fadeOut(1000,function(){
                                                 $('#phone-narration3').fadeIn(1000);
                                                 $("#continue-container").delay(8000).fadeIn(100);
-                                                $('#phone-bg, #phone-narration3').on("click", function(){
-                                                  $("#continue-container").stop().hide();
-                                                  $('#phone-narration3').fadeOut(1000,function(){
-                                                    $('#phone-narration4').fadeIn(1000);
-                                                    $("#continue-container").delay(8000).fadeIn(100);
-                                                    $('#phone-bg, #phone-narration4').on("click", function(){
-                                                      $("#continue-container").stop().hide();
-                                                      $('#phone-narration4').fadeOut(1000,function(){
-                                                        $('#phone-narration5').fadeIn(1000);
-                                                        $("#continue-container").delay(8000).fadeIn(100);
-                                                        $("#phone-bg, #phone-narration5").on("click", function (){
-                                                          $("#continue-container").stop().hide();
-                                                          $("#typing-container3").fadeOut(100);
-                                                          $('#phone-narration5').fadeOut(1000,function(){
-                                                            $('#phone-bg').fadeOut(4000); //start of the gamestart scene
-                                                            $("#gamestart-bg").fadeIn(8000);
-                                                            $("#typing-container4").show();
-                                                            $("#type-sound").get(0).play();
-                                                          });
-                                                        }); //ending of the gamestart scene
-                                                      });
-                                                    });
-                                                  });
-                                                });
+                                                $('#phone-bg, #phone-narration3').on("click", phonenarration3click);
                                               });
                                             });
                                           });     
@@ -294,5 +271,63 @@ $(document).ready(function() {
   });
 
 }); // End of the loading document
+
+
+
+
+
+
+
+function phonenarration3click(){
+  $("#continue-container").stop().hide();
+  $('#phone-narration3').fadeOut(1000, phonenarration3fade);
+}
+
+
+
+
+
+function phonenarration3fade(){
+  $('#phone-narration4').fadeIn(1000);
+  $("#continue-container").delay(8000).fadeIn(100);
+  $('#phone-bg, #phone-narration4').on("click", phonebgclick);
+}
+
+
+
+
+
+function phonebgclick(){
+  $("#continue-container").stop().hide();
+  $('#phone-narration4').fadeOut(1000, phonenarration4fade);
+}
+
+
+
+
+function phonenarration4fade(){
+  $('#phone-narration5').fadeIn(1000);
+  $("#continue-container").delay(8000).fadeIn(100);
+  $("#phone-bg, #phone-narration5").on("click", phonestart); //ending of the gamestart scene
+}
+
+
+
+function phonestart(){
+  $("#continue-container").stop().hide();
+  $("#typing-container3").fadeOut(100);
+  $('#phone-narration5').fadeOut(1000,gamestart);
+}
+
+
+
+function gamestart(){
+  $('#phone-bg').fadeOut(4000); //start of the gamestart scene
+  $("#gamestart-bg").fadeIn(8000);
+  $("#typing-container4").show();
+  $("#type-sound").get(0).play();
+}
+
+
 
 
