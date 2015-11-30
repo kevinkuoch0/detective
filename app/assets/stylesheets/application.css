@@ -326,7 +326,7 @@ nav li a:link{
   position: absolute;
   top: 76%;
   left: 65%;
-  z-index: 1;
+  z-index: 9;
   width: 20%;
 
   -webkit-animation-name: blinker;

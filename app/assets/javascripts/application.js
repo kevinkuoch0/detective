@@ -141,17 +141,17 @@ $(document).ready(function() {
       $("#typing-container").show();
       $("#type-sound").get(0).play();
       $("#narration1").delay(2000).fadeIn(3000); //first text fading in
-      $("#continue-container").show(500);
+      $("#continue-container").show().delay(5000);
       $("#alleyway-bg, #narration1").click(function() { //start of the click narration
         $("#continue-container").hide();
         $("#narration1").fadeOut(1000, function() {  //first text fading out
           $("#narration2").fadeIn(1000);  //second text fading in
-          $("#continue-container").show(500);
+          $("#continue-container").show().delay(5000);
           $("#narration2, #alleyway-bg").click(function() {  // second text fading out 
             $("#continue-container").hide();
             $("#narration2").fadeOut(1000, function() { //third fading in
               $("#narration3").fadeIn(1000);
-              $("#continue-container").show(500);
+              $("#continue-container").show().delay(5000);
               $("#alleyway-bg, #narration3").on("click", function() {
                 $("#continue-container").hide();
                 $("#narration2").hide();
