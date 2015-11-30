@@ -109,7 +109,6 @@ $(document).ready(function() {
        $("canvas").fadeIn(3000);
        $("nav").fadeIn(3000);
        $("#credits-bg").fadeOut(3000);
-       // $('#credits-list').fadeOut(3000).;
        $('#back-div').fadeOut(3000);
        $('#credits-list').stop().animate({top:"100%"}, 0).fadeOut(3000, function(){ 
           $('#bottom-bar').fadeOut(3000);
@@ -143,13 +142,19 @@ $(document).ready(function() {
       $("#typing-container").show();
       $("#type-sound").get(0).play();
       $("#narration1").delay(2000).fadeIn(3000); //first text fading in
+      $("#continue-container").delay(5000).show(500);
       $("#alleyway-bg, #narration1").click(function() { //start of the click narration
+        $("#continue-container").hide();
         $("#narration1").fadeOut(1000, function() {  //first text fading out
           $("#narration2").fadeIn(1000);  //second text fading in
-          $("#narration2, #alleyway-bg").click(function() {  // second text fading out 
+          $("#continue-container").delay(3000).show(500);
+          $("#narration2, #alleyway-bg").click(function() {  // second text fading out
+          $("#continue-container").hide(); 
             $("#narration2").fadeOut(1000, function() { //third fading in
               $("#narration3").fadeIn(1000);
+              $("#continue-container").delay(5000).show(500);
               $("#alleyway-bg, #narration3").on("click", function() {
+                $("#continue-container").hide();
                 $("#narration2").hide();
                 $("#typing-container").fadeOut(1000);
                 $("#narration-container").fadeOut(1000); //fading out narration container !! where is it appearing
