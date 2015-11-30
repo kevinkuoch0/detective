@@ -218,7 +218,20 @@ nav li a:link{
   width: 63%;
   height: 81%;
 }
+#gamestart-bg{
+/*the code below this activates the canvas border, turn it on to visibly see how big the canvas is */
 
+  /*border: 1px solid blue;*/
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:auto;
+  display: none;
+  width: 63%;
+  height: 81%;
+}
 #typing-container{
   display: none;
   position: absolute;
@@ -250,7 +263,7 @@ nav li a:link{
 }
 
 #typing2 p{
-  color: black; 
+  color: white; 
   font-family: "Limelight";
   font-weight: bold;
   font-size: 20px;
@@ -272,6 +285,27 @@ nav li a:link{
 
 
 #typing3 p{
+  color: white; 
+  font-family: "Limelight";
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+#typing-container4{
+  display: none;
+  position: absolute;
+  top: 84%;
+  left: 18%;
+  z-index: 1;
+  font-size: 2vw;
+}
+
+
+#typing4 p{
   color: black; 
   font-family: "Limelight";
   font-weight: bold;
@@ -282,7 +316,6 @@ nav li a:link{
   width: 30em;
   animation: type 4s steps(60, end); 
 }
-
 @keyframes type{ 
   from { width: 0; } 
 } 
@@ -353,6 +386,153 @@ nav li a:link{
   margin: 10px 0 0 9px;
 
 }
+
+#office-narration-container{
+  position: absolute;
+  top: 12%;
+  left: 19%;
+  z-index: 1;
+  width: 55%;
+}
+
+#office-narration1{
+  display:none;
+}
+
+#office-narration1 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 2.9vw;
+  margin: 10px 0 0 9px;
+}
+
+#office-narration2{
+  display:none;
+}
+
+#office-narration2 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.2vw;
+  margin: 10px 0 0 9px;
+}
+
+#office-narration3{
+  display:none;
+}
+
+#office-narration3 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.05vw;
+  margin: 10px 0 0 9px;
+}
+
+#office-narration4{
+  display:none;
+}
+
+#office-narration4 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.05vw;
+  margin: 10px 0 0 9px;
+}
+
+#office-narration5{
+  display:none;
+}
+
+#office-narration5 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 2.9vw;
+  margin: 10px 0 0 9px;
+}
+
+
+
+
+
+
+#phone-container{
+  position: absolute;
+  top: 12%;
+  left: 19%;
+  z-index: 1;
+  width: 55%;
+}
+
+#phone-narration1{
+  display:none;
+}
+
+#phone-narration1 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.2vw;
+  margin: 10px 0 0 9px;
+}
+
+#phone-narration2{
+  display:none;
+}
+
+#phone-narration2 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.2vw;
+  margin: 10px 0 0 9px;
+}
+
+#phone-narration3{
+  display:none;
+}
+
+#phone-narration3 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.05vw;
+  margin: 10px 0 0 9px;
+}
+
+
+
+#phone-narration4{
+  display:none;
+}
+
+#phone-narration4 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.05vw;
+  margin: 10px 0 0 9px;
+}
+
+#phone-narration5{
+  display:none;
+}
+
+#phone-narration5 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.05vw;
+  margin: 10px 0 0 9px;
+}
+
+
+
+
 
 #film-border-top{
   background-image: url(/assets/film-strip.png);
