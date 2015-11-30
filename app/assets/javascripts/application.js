@@ -94,9 +94,9 @@ setInterval(draw, 3500/60);
  // ***This comment ends the above code at line 67***
 
 $(document).ready(function() {
- $("canvas").fadeIn(3000);
- $("nav").fadeIn(3000);
- $("#noir-song").get(0).play();
+  $("canvas").fadeIn(3000);
+  $("nav").fadeIn(3000);
+  $("#noir-song").get(0).play();
   //click function for the credits
   $("#credits").on("click",function() {
     $('#bottom-bar').fadeIn(0);
@@ -106,19 +106,17 @@ $(document).ready(function() {
     $("#credits-bg").fadeIn(1000);
     $('#credits-list').show().animate({top:"7%"}, 15000);
     $("#back-to-menu").on("click", function() {
-       $("canvas").fadeIn(3000);
-       $("nav").fadeIn(3000);
-       $("#credits-bg").fadeOut(3000);
-       // $('#credits-list').fadeOut(3000).;
-       $('#back-div').fadeOut(3000);
-       $('#credits-list').stop().animate({top:"100%"}, 0).fadeOut(3000, function(){ 
-          $('#bottom-bar').fadeOut(3000);
-        });
-       
-    });
+      $("canvas").fadeIn(3000);
+      $("nav").fadeIn(3000);
+      $("#credits-bg").fadeOut(3000);
+      $('#back-div').fadeOut(3000);
+      $('#credits-list').stop().animate({top:"100%"}, 0).fadeOut(3000, function(){ 
+        $('#bottom-bar').fadeOut(3000);
+      });
+     });
   });  //end of the credits
   //Start button for game
- $("#start").on("click", function() {
+  $("#start").on("click", function() {
     $("canvas").fadeOut(1000);
     $("#start").fadeOut(1000);
     $("#credits").fadeOut(1000);
@@ -133,23 +131,29 @@ $(document).ready(function() {
         easing: 'swing', // or "linear"
                         // use jQuery UI or Easing plugin for more options
         step: function() {
-         console.log(this.blurRadius);
-         $('#alleyway-bg').css({
-           "-webkit-filter": "blur("+this.blurRadius+"px)",
-           "filter": "blur("+this.blurRadius+"px)"
-         });
+          console.log(this.blurRadius);
+          $('#alleyway-bg').css({
+            "-webkit-filter": "blur("+this.blurRadius+"px)",
+            "filter": "blur("+this.blurRadius+"px)"
+          });
         }
       });
       $("#typing-container").show();
       $("#type-sound").get(0).play();
       $("#narration1").delay(2000).fadeIn(3000); //first text fading in
+      $("#continue-container").show(500);
       $("#alleyway-bg, #narration1").click(function() { //start of the click narration
+        $("#continue-container").hide();
         $("#narration1").fadeOut(1000, function() {  //first text fading out
           $("#narration2").fadeIn(1000);  //second text fading in
+          $("#continue-container").show(500);
           $("#narration2, #alleyway-bg").click(function() {  // second text fading out 
+            $("#continue-container").hide();
             $("#narration2").fadeOut(1000, function() { //third fading in
               $("#narration3").fadeIn(1000);
+              $("#continue-container").show(500);
               $("#alleyway-bg, #narration3").on("click", function() {
+                $("#continue-container").hide();
                 $("#narration2").hide();
                 $("#typing-container").fadeOut(1000);
                 $("#narration-container").fadeOut(1000); //fading out narration container !! where is it appearing
@@ -162,11 +166,11 @@ $(document).ready(function() {
                     easing: 'swing', // or "linear"
                                     // use jQuery UI or Easing plugin for more options
                     step: function() {
-                     console.log(this.blurRadius);
-                     $('#office-bg').css({
-                       "-webkit-filter": "blur("+this.blurRadius+"px)",
-                       "filter": "blur("+this.blurRadius+"px)"
-                     });
+                      console.log(this.blurRadius);
+                      $('#office-bg').css({
+                        "-webkit-filter": "blur("+this.blurRadius+"px)",
+                        "filter": "blur("+this.blurRadius+"px)"
+                      });
                     }
                   });
                   $("#typing-container2").show();
@@ -174,46 +178,77 @@ $(document).ready(function() {
                   $("#typing-container2").delay(3000).fadeOut(1000); //Either this is faded or the text get smaller. It interferes with the text
                   $("#office-narration1").delay(2000).fadeIn(1000);
                   $("#office-narration1").on("click", function () { //start of office narration function
+                    $(this).fadeOut(1000, function() {
+                      $("#office-narration2").fadeIn(1000);
+                      $("#office-narration2").on("click", function () {
                         $(this).fadeOut(1000, function() {
-                        $("#office-narration2").fadeIn(1000);
-                    $("#office-narration2").on("click", function () {
-                        $(this).fadeOut(1000, function() {
-                        $("#office-narration3").fadeIn(1000);
-                     $("#office-narration3").on("click", function (){
+                          $("#office-narration3").fadeIn(1000);
+                          $("#office-narration3").on("click", function (){
                             $(this).fadeOut(1000, function() {
-                            $("#office-narration4").fadeIn(1000);
-                        $("#office-narration4").on("click", function (){
-                            $(this).fadeOut(1000, function(){
-                          $("#office-narration5").fadeIn(1000);
-                            $("#office-narration5").on("click",function(){
-                              $(this).fadeOut(1000);                              
-                                  $("#typing-container2").fadeOut(1000);
-                                  $(this).fadeOut(4000); // Start of phone-bg scene
-                                  $("#phonenoise-sound").get(0).play();
-                                  $("#phone-bg").fadeIn(8000, function() {
-                                    $("#phone-bg").fadeTo(500, 0.1);
-                                    $({blurRadius: 0}).animate({blurRadius: 10}, {
-                                      duration: 500,
-                                      easing: 'swing', // or "linear"
-                                                      // use jQuery UI or Easing plugin for more options
-                                      step: function() {
-                                       console.log(this.blurRadius);
-                                       $('#phone-bg').css({
-                                         "-webkit-filter": "blur("+this.blurRadius+"px)",
-                                         "filter": "blur("+this.blurRadius+"px)"
-                                         });
+                              $("#office-narration4").fadeIn(1000);
+                              $("#office-narration4").on("click", function (){
+                                $(this).fadeOut(1000, function(){
+                                  $("#office-narration5").fadeIn(1000);
+                                  $("#office-narration5").on("click",function(){
+                                    $(this).fadeOut(1000);                              
+                                    $("#typing-container2").fadeOut(1000);
+                                    $(this).fadeOut(4000); // Start of phone-bg scene
+                                    $("#phonenoise-sound").get(0).play();
+                                    $("#phone-bg").fadeIn(8000, function() {
+                                      $("#phone-bg").fadeTo(500, 0.1);
+                                      $({blurRadius: 0}).animate({blurRadius: 10}, {
+                                        duration: 500,
+                                        easing: 'swing', // or "linear"
+                                                        // use jQuery UI or Easing plugin for more options
+                                        step: function() {
+                                          console.log(this.blurRadius);
+                                          $('#phone-bg').css({
+                                            "-webkit-filter": "blur("+this.blurRadius+"px)",
+                                            "filter": "blur("+this.blurRadius+"px)"
+                                          });
                                         }
                                       });
-                                      $("#typing-container3").show();
                                       $("#type-sound").get(0).play();
-                                      }); // end of the blur function
-                                    });
+                                      $("#typing-container3").show(function() {
+                                        $('#phone-narration1').fadeIn(1000);
+                                        $('#phone-bg, #phone-narration1').on("click", function(){
+                                          $('#phone-narration1').fadeOut(1000,function(){
+                                            $('#phone-narration2').fadeIn(1000);
+                                            $('#phone-bg, #phone-narration2').on("click", function(){
+                                              $('#phone-narration2').fadeOut(1000,function(){
+                                                $('#phone-narration3').fadeIn(1000);
+                                                $('#phone-bg, #phone-narration3').on("click", function(){
+                                                  $('#phone-narration3').fadeOut(1000,function(){
+                                                    $('#phone-narration4').fadeIn(1000);
+                                                    $('#phone-bg, #phone-narration4').on("click", function(){
+                                                      $('#phone-narration4').fadeOut(1000,function(){
+                                                        $('#phone-narration5').fadeIn(1000);
+                                                        $("#phone-bg, #phone-narration5").on("click", function (){
+                                                          $("#typing-container3").fadeOut(100);
+                                                          $('#phone-narration5').fadeOut(1000,function(){
+                                                            $('#phone-bg').fadeOut(4000); //start of the gamestart scene
+                                                            $("#gamestart-bg").fadeIn(8000);
+                                                            $("#typing-container4").show();
+                                                            $("#type-sound").get(0).play();
+                                                          });
+                                                        }); //ending of the gamestart scene
+                                                      });
+                                                    });
+                                                  });
+                                                });
+                                              });
+                                            });
+                                          });     
+                                        });
+                                      });
+                                    }); // end of the blur function
                                   });
                                 });
                               });
-                            }); //end of office narration5 CLICK function
+                            });
+                          }); //end of office narration5 CLICK function
                         }); //end of office narration4 CLICK function
-                     }); //end of office narration3 CLICK function 
+                      }); //end of office narration3 CLICK function 
                     }); //end of office narration2 CLICK function
                   }); //end of office narration1 CLICK function
                 }); // end of the blur function
@@ -223,30 +258,21 @@ $(document).ready(function() {
         });   //end of fadeout out first click 
       }); //end of first click narration bubble
     }); // transition to the office scene below, above is first scene ending
-
-    $("#phone-bg").on("click", function (){
-      $("#typing-container3").fadeOut(100);
-      $(this).fadeOut(4000); //start of the gamestart scene
-      $("#gamestart-bg").fadeIn(8000);
-      $("#typing-container4").show();
-      $("#type-sound").get(0).play();
-    }); //ending of the gamestart scene
   }); //ending for start function
 
- // music toggle next 11 lines
- $("#sound-off").on("click", function() {
+  // music toggle next 11 lines
+  $("#sound-off").on("click", function() {
     $("#sound-off").hide();
     $("#sound-on").show();
     $("#noir-song").get(0).pause();
     $("#noir-song").get(0).currentTime = 0;
- });
+  });
   $("#sound-on").on("click", function() {
     $("#sound-on").hide();
     $("#sound-off").show();
     $("#noir-song").get(0).play();
- });
+  });
 
-
-}); // End of the loading document on line 115
+}); // End of the loading document
 
 
