@@ -357,15 +357,6 @@ a{
   text-decoration: none;
 }
 
-#narration1 a:link{
-  text-decoration: none;
-  color: black;
-}
-
-#narration1 a:visited{
-  color: black;
-}
-
 #narration1 p{
   color: white; 
   font-family: "Journal";
@@ -378,14 +369,6 @@ a{
   display:none;
 }
 
-#narration2 a:link{
-  text-decoration: none;
-  color: black;
-}
-
-#narration2 a:visited{
-  color: black;
-}
 
 #narration2 p{
   color: white; 
@@ -399,14 +382,6 @@ a{
   display:none;
 }
 
-#narration3 a:link{
-  text-decoration: none;
-  color: black;
-}
-
-#narration3 a:visited{
-  color: black;
-}
 
 #narration3 p{
   color: white; 
@@ -429,14 +404,6 @@ a{
   display:none;
 }
 
-#office-narration1 a:link{
-  text-decoration: none;
-  color: black;
-}
-
-#office-narration1 a:visited{
-  color: black;
-}
 
 #office-narration1 p{
   color: white; 
@@ -450,14 +417,6 @@ a{
   display:none;
 }
 
-#office-narration2 a:link{
-  text-decoration: none;
-  color: black;
-}
-
-#office-narration2 a:visited{
-  color: black;
-}
 
 #office-narration2 p{
   color: white; 
@@ -471,14 +430,6 @@ a{
   display:none;
 }
 
-#office-narration3 a:link{
-  text-decoration: none;
-  color: black;
-}
-
-#office-narration3 a:visited{
-  color: black;
-}
 
 #office-narration3 p{
   color: white; 
@@ -492,14 +443,6 @@ a{
   display:none;
 }
 
-#office-narration4 a:link{
-  text-decoration: none;
-  color: black;
-}
-
-#office-narration4 a:visited{
-  color: black;
-}
 
 #office-narration4 p{
   color: white; 
@@ -513,14 +456,6 @@ a{
   display:none;
 }
 
-#office-narration5 a:link{
-  text-decoration: none;
-  color: black;
-}
-
-#office-narration5 a:visited{
-  color: black;
-}
 
 #office-narration5 p{
   color: white; 
@@ -529,10 +464,6 @@ a{
   font-size: 2.9vw;
   margin: 10px 0 0 9px;
 }
-
-
-
-
 
 
 #phone-container{
@@ -547,15 +478,6 @@ a{
   display:none;
 }
 
-#phone-narration1 a:link{
-  text-decoration: none;
-  color: black;
-}
-
-#phone-narration1 a:visited{
-  color: black;
-}
-
 #phone-narration1 p{
   color: white; 
   font-family: "Journal";
@@ -566,15 +488,6 @@ a{
 
 #phone-narration2{
   display:none;
-}
-
-#phone-narration2 a:link{
-  text-decoration: none;
-  color: black;
-}
-
-#phone-narration2 a:visited{
-  color: black;
 }
 
 #phone-narration2 p{
@@ -589,15 +502,6 @@ a{
   display:none;
 }
 
-#phone-narration3 a:link{
-  text-decoration: none;
-  color: black;
-}
-
-#phone-narration3 a:visited{
-  color: black;
-}
-
 #phone-narration3 p{
   color: white; 
   font-family: "Journal";
@@ -606,19 +510,8 @@ a{
   margin: 10px 0 0 9px;
 }
 
-
-
 #phone-narration4{
   display:none;
-}
-
-#phone-narration4 a:link{
-  text-decoration: none;
-  color: black;
-}
-
-#phone-narration4 a:visited{
-  color: black;
 }
 
 #phone-narration4 p{
@@ -633,15 +526,6 @@ a{
   display:none;
 }
 
-#phone-narration5 a:link{
-  text-decoration: none;
-  color: black;
-}
-
-#phone-narration5 a:visited{
-  color: black;
-}
-
 #phone-narration5 p{
   color: white; 
   font-family: "Journal";
@@ -649,10 +533,6 @@ a{
   font-size: 3.05vw;
   margin: 10px 0 0 9px;
 }
-
-
-
-
 
 #film-border-top{
   background-image: url(/assets/film-strip.png);
