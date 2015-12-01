@@ -556,3 +556,72 @@ a{
 }
 
 
+
+
+#start-container{
+  position: absolute;
+  top: 12%;
+  left: 19%;
+  z-index: 1;
+  width: 55%;
+}
+
+#start-narration1{
+  display:none;
+}
+
+#start-narration1 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.2vw;
+  margin: 10px 0 0 9px;
+}
+
+#start-narration2{
+  display:none;
+}
+
+#start-narration2 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.2vw;
+  margin: 10px 0 0 9px;
+}
+
+#start-narration3{
+  display:none;
+}
+
+#start-narration3 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.05vw;
+  margin: 10px 0 0 9px;
+}
+
+#start-narration4{
+  display:none;
+}
+
+#start-narration4 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.05vw;
+  margin: 10px 0 0 9px;
+}
+
+#start-narration5{
+  display:none;
+}
+
+#start-narration5 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.05vw;
+  margin: 10px 0 0 9px;
+}
