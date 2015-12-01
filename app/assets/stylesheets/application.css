@@ -415,6 +415,15 @@ nav li a:link{
   display:none;
 }
 
+#narration1 a:link{
+  text-decoration: none;
+  color: black;
+}
+
+#narration1 a:visited{
+  color: black;
+}
+
 #narration1 p{
   color: white; 
   font-family: "Journal";
@@ -427,6 +436,15 @@ nav li a:link{
   display:none;
 }
 
+#narration2 a:link{
+  text-decoration: none;
+  color: black;
+}
+
+#narration2 a:visited{
+  color: black;
+}
+
 #narration2 p{
   color: white; 
   font-family: "Journal";
@@ -437,6 +455,15 @@ nav li a:link{
 
 #narration3{
   display:none;
+}
+
+#narration3 a:link{
+  text-decoration: none;
+  color: black;
+}
+
+#narration3 a:visited{
+  color: black;
 }
 
 #narration3 p{
@@ -460,6 +487,15 @@ nav li a:link{
   display:none;
 }
 
+#office-narration1 a:link{
+  text-decoration: none;
+  color: black;
+}
+
+#office-narration1 a:visited{
+  color: black;
+}
+
 #office-narration1 p{
   color: white; 
   font-family: "Journal";
@@ -470,6 +506,15 @@ nav li a:link{
 
 #office-narration2{
   display:none;
+}
+
+#office-narration2 a:link{
+  text-decoration: none;
+  color: black;
+}
+
+#office-narration2 a:visited{
+  color: black;
 }
 
 #office-narration2 p{
@@ -484,6 +529,15 @@ nav li a:link{
   display:none;
 }
 
+#office-narration3 a:link{
+  text-decoration: none;
+  color: black;
+}
+
+#office-narration3 a:visited{
+  color: black;
+}
+
 #office-narration3 p{
   color: white; 
   font-family: "Journal";
@@ -496,6 +550,15 @@ nav li a:link{
   display:none;
 }
 
+#office-narration4 a:link{
+  text-decoration: none;
+  color: black;
+}
+
+#office-narration4 a:visited{
+  color: black;
+}
+
 #office-narration4 p{
   color: white; 
   font-family: "Journal";
@@ -506,6 +569,15 @@ nav li a:link{
 
 #office-narration5{
   display:none;
+}
+
+#office-narration5 a:link{
+  text-decoration: none;
+  color: black;
+}
+
+#office-narration5 a:visited{
+  color: black;
 }
 
 #office-narration5 p{
@@ -533,6 +605,15 @@ nav li a:link{
   display:none;
 }
 
+#phone-narration1 a:link{
+  text-decoration: none;
+  color: black;
+}
+
+#phone-narration1 a:visited{
+  color: black;
+}
+
 #phone-narration1 p{
   color: white; 
   font-family: "Journal";
@@ -545,6 +626,15 @@ nav li a:link{
   display:none;
 }
 
+#phone-narration2 a:link{
+  text-decoration: none;
+  color: black;
+}
+
+#phone-narration2 a:visited{
+  color: black;
+}
+
 #phone-narration2 p{
   color: white; 
   font-family: "Journal";
@@ -555,6 +645,15 @@ nav li a:link{
 
 #phone-narration3{
   display:none;
+}
+
+#phone-narration3 a:link{
+  text-decoration: none;
+  color: black;
+}
+
+#phone-narration3 a:visited{
+  color: black;
 }
 
 #phone-narration3 p{
@@ -571,6 +670,15 @@ nav li a:link{
   display:none;
 }
 
+#phone-narration4 a:link{
+  text-decoration: none;
+  color: black;
+}
+
+#phone-narration4 a:visited{
+  color: black;
+}
+
 #phone-narration4 p{
   color: white; 
   font-family: "Journal";
@@ -581,6 +689,15 @@ nav li a:link{
 
 #phone-narration5{
   display:none;
+}
+
+#phone-narration5 a:link{
+  text-decoration: none;
+  color: black;
+}
+
+#phone-narration5 a:visited{
+  color: black;
 }
 
 #phone-narration5 p{
