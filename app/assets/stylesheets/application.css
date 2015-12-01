@@ -81,14 +81,14 @@ nav li a:link{
   src: url('/assets/journal.ttf');
 }
 @font-face{
-  font-family: 'Psychotika';
-  src: url('/assets/Psychotika_by_FlowerByDeath.ttf');
+  font-family: 'Luxembourg 1910 Font Family';
+  src: url('/assets/luxembourg-1910.regular.ttf');
 }
 
 span {
   color:white;
-  font-family: "Psychotika";
-  font-weight:bold;
+  font-family: "Luxembourg 1910 Font Family";
+  font-weight:normal;
   font-size: 3.2vw;
   margin:10px 0 0 9px;
 }
