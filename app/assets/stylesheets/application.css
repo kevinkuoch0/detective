@@ -81,13 +81,13 @@ nav li a:link{
   src: url('/assets/journal.ttf');
 }
 @font-face{
-  font-family: 'My Bleeding Scars';
-  src: url('/assets/my.bleeding-scars.ttf');
+  font-family: 'Psychotika';
+  src: url('/assets/Psychotika_by_FlowerByDeath.ttf');
 }
 
 span {
   color:white;
-  font-family: "My Bleeding Scars";
+  font-family: "Psychotika";
   font-weight:bold;
   font-size: 3.2vw;
   margin:10px 0 0 9px;
