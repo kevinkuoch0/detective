@@ -141,22 +141,14 @@ $(document).ready(function() {
       $("#typing-container").show();
       $("#type-sound").get(0).play();
       $("#narration1").delay(2000).fadeIn(3000); //first text fading in
-      $("#continue-container").delay(4000).fadeIn(100);
       $("#narration1").click(function() { //start of the click narration
-        $("#continue-container").stop().hide();
         $("#narration1").fadeOut(1000, function() {  //first text fading out
           $("#narration2").fadeIn(1000);  //second text fading in
-          $("#continue-container").delay(2000).fadeIn(100);
           $("#narration2").click(function() {  // second text fading out 
-            $("#continue-container").stop().hide();
             $("#narration2").fadeOut(1000, function() { //third fading in
               $("#narration3").fadeIn(1000);
-              $("#continue-container").delay(2000).fadeIn(100);
               $("#narration3").on("click", function() {
-                $("#continue-container").stop().hide();
-                $("#narration1").hide();
-                $("#narration2").hide();
-                $("#narration3").hide();
+                $("#narration3").fadeOut(1000);
                 $("#typing-container").fadeOut(1000);
                 $("#narration-container").fadeOut(1000); //fading out narration container !! where is it appearing
                 $("#alleyway-bg").fadeOut(4000); //Fading out the first scene
@@ -179,29 +171,19 @@ $(document).ready(function() {
                   $("#type-sound").get(0).play();
                   $("#typing-container2").delay(3000).fadeOut(1000); //Either this is faded or the text get smaller. It interferes with the text
                   $("#office-narration1").delay(2000).fadeIn(1000,function(){
-                    $("#continue-container").fadeIn(100);
                     $("#office-narration1").on("click", function () { //start of office narration function
-                      $("#continue-container").stop().hide();
                       $("#office-narration1").fadeOut(1000, function() {
-                        $("#office-narration2").fadeIn(1000);
-                        $("#continue-container").delay(2000).fadeIn(100);
-                        $("#office-narration2").on("click", function () {
-                          $("#continue-container").stop().hide();
+                        $("#office-narration2").fadeIn(1000); 
+                        $("#office-narration2").on("click", function () {                         
                           $("#office-narration2").fadeOut(1000, function() {
-                            $("#office-narration3").fadeIn(1000);
-                            $("#continue-container").delay(2000).fadeIn(100);
-                            $("#office-narration3").on("click", function (){
-                              $("#continue-container").stop().hide();
+                            $("#office-narration3").fadeIn(1000);                           
+                            $("#office-narration3").on("click", function (){                              
                               $("#office-narration3").fadeOut(1000, function() {
                                 $("#office-narration4").fadeIn(1000);
-                                $("#continue-container").delay(2000).fadeIn(100);
                                 $("#office-narration4").on("click", function (){
-                                  $("#continue-container").stop().hide();
                                   $("#office-narration4").fadeOut(1000, function(){
                                     $("#office-narration5").fadeIn(1000);
-                                    $("#continue-container").delay(2000).fadeIn(100);
                                     $("#office-narration5").on("click",function(){
-                                      $("#continue-container").stop().hide();
                                       $("#office-narration5").fadeOut(1000);                              
                                       $("#typing-container2").fadeOut(1000);
                                       $("#office-bg").fadeOut(4000); // Start of phone-bg scene
@@ -223,17 +205,12 @@ $(document).ready(function() {
                                         $("#type-sound").get(0).play();
                                         $("#typing-container3").show(function() {
                                           $('#phone-narration1').fadeIn(1000);
-                                          $("#continue-container").delay(2000).fadeIn(100);
                                           $('#phone-narration1').on("click", function(){
-                                            $("#continue-container").stop().hide();
                                             $('#phone-narration1').fadeOut(1000,function(){
                                               $('#phone-narration2').fadeIn(1000);
-                                              $("#continue-container").delay(2000).fadeIn(100);
                                               $('#phone-narration2').on("click", function(){
-                                                $("#continue-container").stop().hide();
                                                 $('#phone-narration2').fadeOut(1000,function(){
                                                   $('#phone-narration3').fadeIn(1000);
-                                                  $("#continue-container").delay(8000).fadeIn(100);
                                                   $('#phone-narration3').on("click", phonenarration3click);
                                                 });
                                               });
@@ -282,7 +259,6 @@ $(document).ready(function() {
 
 
 function phonenarration3click(){
-  $("#continue-container").stop().hide();
   $('#phone-narration3').fadeOut(1000, phonenarration3fade);
 }
 
@@ -292,7 +268,6 @@ function phonenarration3click(){
 
 function phonenarration3fade(){
   $('#phone-narration4').fadeIn(1000);
-  $("#continue-container").delay(8000).fadeIn(100);
   $('#phone-narration4').on("click", phonebgclick);
 }
 
@@ -301,7 +276,6 @@ function phonenarration3fade(){
 
 
 function phonebgclick(){
-  $("#continue-container").stop().hide();
   $('#phone-narration4').fadeOut(1000, phonenarration4fade);
 }
 
@@ -310,14 +284,12 @@ function phonebgclick(){
 
 function phonenarration4fade(){
   $('#phone-narration5').fadeIn(1000);
-  $("#continue-container").delay(8000).fadeIn(100);
   $("#phone-narration5").on("click", phonestart); //ending of the gamestart scene
 }
 
 
 
 function phonestart(){
-  $("#continue-container").stop().hide();
   $("#typing-container3").fadeOut(100);
   $('#phone-narration5').fadeOut(1000,gamestart);
 }
