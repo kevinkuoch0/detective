@@ -80,7 +80,18 @@ nav li a:link{
   font-family: 'Journal';
   src: url('/assets/journal.ttf');
 }
+@font-face{
+  font-family: 'My Bleeding Scars';
+  src: url('/assets/my.bleeding-scars.ttf');
+}
 
+span {
+  color:white;
+  font-family: "My Bleeding Scars";
+  font-weight:bold;
+  font-size: 3.2vw;
+  margin:10px 0 0 9px;
+}
 #sound-on img{
   width: 30px;
   position: absolute;
