@@ -81,15 +81,15 @@ nav li a:link{
   src: url('/assets/journal.ttf');
 }
 @font-face{
-  font-family: 'Luxembourg 1910 Font Family';
-  src: url('/assets/luxembourg-1910.regular.ttf');
+  font-family: 'Skratch_V2';
+  src: url('Skratchy_v2.ttf');
 }
 
 span {
   color:white;
-  font-family: "Luxembourg 1910 Font Family";
+  font-family: "Skratch_V2";
   font-weight:normal;
-  font-size: 3.2vw;
+  font-size: 2.6vw;
   margin:10px 0 0 9px;
 }
 #sound-on img{
@@ -566,9 +566,6 @@ a{
   z-index: 99;
 }
 
-
-
-
 #start-container{
   position: absolute;
   top: 12%;
@@ -598,41 +595,5 @@ a{
   font-family: "Journal";
   font-weight: bold;
   font-size: 3.2vw;
-  margin: 10px 0 0 9px;
-}
-
-#start-narration3{
-  display:none;
-}
-
-#start-narration3 p{
-  color: white; 
-  font-family: "Journal";
-  font-weight: bold;
-  font-size: 3.05vw;
-  margin: 10px 0 0 9px;
-}
-
-#start-narration4{
-  display:none;
-}
-
-#start-narration4 p{
-  color: white; 
-  font-family: "Journal";
-  font-weight: bold;
-  font-size: 3.05vw;
-  margin: 10px 0 0 9px;
-}
-
-#start-narration5{
-  display:none;
-}
-
-#start-narration5 p{
-  color: white; 
-  font-family: "Journal";
-  font-weight: bold;
-  font-size: 3.05vw;
   margin: 10px 0 0 9px;
 }

@@ -301,6 +301,7 @@ function gamestart(){
   $("#gamestart-bg").fadeIn(8000);
   $("#typing-container4").show();
   $("#type-sound").get(0).play();
+  $("#start-narration1").delay(2000).fadeIn(3000); //first text fading in
 }
 
 
