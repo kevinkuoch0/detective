@@ -298,6 +298,7 @@ function phonestart(){
 
 function gamestart(){
   $('#phone-bg').fadeOut(2500); //start of the gamestart scene
+  $("#finaldoor").get(0).play();
   $("#gamestart-bg").fadeIn(2500, function(){
     $("#gamestart-bg").fadeTo(300, 0.1);
     $({blurRadius: 0}).animate({blurRadius: 10}, {
@@ -317,7 +318,13 @@ function gamestart(){
   $("#start-narration1").delay(2000).fadeIn(1000); //first text fading in
   $("#start-narration1").on("click",function(){
     $("#start-narration1").fadeOut(1000, function(){
-    $("#start-narration2").fadeIn(1000);
+      $("#start-narration2").fadeIn(1000);
+    $("#start-narration2").on("click", function(){
+      $("#start-narration2").fadeOut(1000);
+      $("#badge1").fadeIn(1000);
+      $("#badge2").fadeIn(1000);
+      $("#badge3").fadeIn(1000);
+    });
       });
     });
   });
