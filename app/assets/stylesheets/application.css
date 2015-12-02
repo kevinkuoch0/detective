@@ -614,11 +614,15 @@ a{
 }
 
 
+#flipbook-container {
+  position: absolute; 
+  left: 20%;
+  top: 13%;
+}
 
 #flipbook {
   position: absolute; 
-  left: 20%;
-  top: 100px;
+
 }
 
 
@@ -637,14 +641,12 @@ a{
   height: 752px;
   overflow: hidden;
 }
-.hard {
-  box-shadow:inset 0 0 15px #666;
+.cover {
+
   background-image: url(/assets/notebook-cover.png)
 
 }
-.hard:last-of-type() {
-  background: rgba(57,39,23,1);
-}
+
 .no1 {
   background-image: url(/assets/notebook-page-1.png)
 }
@@ -663,8 +665,8 @@ a{
 .no6 {
   background-image: url(/assets/notebook-page-6.png)
 }
-.no7 {
-  background-image: url(/assets/notebook-cover.png)
+.back {
+  background-image: url(/assets/notebook-back.png)
 }
 
 #badge1{
