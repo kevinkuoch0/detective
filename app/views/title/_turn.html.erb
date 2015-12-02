@@ -8,17 +8,17 @@
 		<div class="page no5"></div>
 		<div class="page no6"></div>
 		<div class="page back"></div>
-		<div class="hard"></div>
-		<script type="text/javascript">
-		$("#flipbook").turn({
-				width: 1108,
-				height: 722,
-				autoCenter: false,
-		  gradients:false
-			});
-		$(".page").not(":first").each(function(i) {
-		  $(this).attr("title", i+1);
-		})
-		</script>
 	</div>
 </div>
+<script type="text/javascript">
+$("#flipbook").turn({
+		width: 1108,
+		height: 722,
+		autoCenter: false,
+  gradients:false
+	});
+$(".page").not(":first").each(function(i) {
+  $(this).attr("title", i+1);
+})
+</script>
+
