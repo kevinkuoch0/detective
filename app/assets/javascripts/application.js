@@ -297,11 +297,30 @@ function phonestart(){
 
 
 function gamestart(){
-  $('#phone-bg').fadeOut(4000); //start of the gamestart scene
-  $("#gamestart-bg").fadeIn(8000);
+  $('#phone-bg').fadeOut(2500); //start of the gamestart scene
+  $("#gamestart-bg").fadeIn(2500, function(){
+    $("#gamestart-bg").fadeTo(300, 0.1);
+    $({blurRadius: 0}).animate({blurRadius: 10}, {
+      duration: 300,
+      easing: 'swing', // or "linear"
+                      // use jQuery UI or Easing plugin for more options
+      step: function() {
+        console.log(this.blurRadius);
+        $('#alleyway-bg').css({
+          "-webkit-filter": "blur("+this.blurRadius+"px)",
+          "filter": "blur("+this.blurRadius+"px)"
+        });
+      }
+    });
   $("#typing-container4").show();
   $("#type-sound").get(0).play();
-  $("#start-narration1").delay(2000).fadeIn(3000); //first text fading in
+  $("#start-narration1").delay(2000).fadeIn(1000); //first text fading in
+  $("#start-narration1").on("click",function(){
+    $("#start-narration1").fadeOut(1000, function(){
+    $("#start-narration2").fadeIn(1000);
+      });
+    });
+  });
 }
 
 
