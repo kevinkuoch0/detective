@@ -313,18 +313,29 @@ function gamestart(){
         });
       }
     });
-  $("#typing-container4").show();
-  $("#type-sound").get(0).play();
-  $("#start-narration1").delay(2000).fadeIn(1000); //first text fading in
-  $("#start-narration1").on("click",function(){
-    $("#start-narration1").fadeOut(1000, function(){
-      $("#start-narration2").fadeIn(1000);
-    $("#start-narration2").on("click", function(){
-      $("#start-narration2").fadeOut(1000);
-      $("#badge1").fadeIn(1000);
-      $("#badge2").fadeIn(1000);
-      $("#badge3").fadeIn(1000);
-    });
+    $("#typing-container4").show();
+    $("#type-sound").get(0).play();
+    $("#start-narration1").delay(2000).fadeIn(1000, function(){ //first text fading in
+      $("#start-narration1").on("click",function(){
+        $("#start-narration1").fadeOut(1000, function(){
+          $("#start-narration2").fadeIn(1000);
+          $("#start-narration2").on("click", function(){
+            $("#start-narration2").fadeOut(1000);
+            $("#badge1").fadeIn(1000);
+            $("#badge2").fadeIn(1000);
+            $("#badge3").fadeIn(1000);
+            $("#notebook-icon").fadeIn(1000, function(){
+              $("#notebook-icon").on("click", function(){
+                $("#typing-container4").hide()
+                $("#badge1").fadeOut(1000);
+                $("#badge2").fadeOut(1000);
+                $("#badge3").fadeOut(1000);
+                $("#notebook-icon").fadeOut(1000);
+                $("#flipbook-container").fadeIn(2000);
+              });
+            });
+          });
+        });
       });
     });
   });

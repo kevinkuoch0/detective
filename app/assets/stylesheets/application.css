@@ -615,6 +615,7 @@ a{
 
 
 #flipbook-container {
+  display: none;
   position: absolute; 
   left: 20%;
   top: 13%;
@@ -627,20 +628,21 @@ a{
 }
 
 
-
-
-
 .page:not(:first-child)+div:before {
   content: "Page " attr(title);
   color: rgba(255,255,255,.75);
   left: 20px;
   top: 10px;
+  width: 60vw;
+  height: 72vh;
   position: absolute;
   text-shadow: 0 0 6px black;
 }
 .page {
   background: no-repeat center top;
   background-size: 100%;
+  width: 60vw;
+  height: 72vh;
   width: 752px;
   height: 752px;
   overflow: hidden;
@@ -724,3 +726,14 @@ a{
 }
 
 
+#notebook-icon{
+  display: none;
+}
+
+#notebook-icon img{
+  width: 100px;
+  height: 120px;
+  position: absolute;
+  left: 75%;
+  top: 13%;
+}
