@@ -618,11 +618,16 @@ a{
   position: absolute; 
   left: 20%;
   top: 13%;
+  width:1108px;
+  height:722px;
 }
 
 #flipbook {
   position: absolute; 
 }
+
+
+
 
 
 .page:not(:first-child)+div:before {

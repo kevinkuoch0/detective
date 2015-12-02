@@ -15,10 +15,27 @@ $("#flipbook").turn({
 		width: 1108,
 		height: 722,
 		autoCenter: false,
-  gradients:false
+  		gradients:false
 	});
 $(".page").not(":first").each(function(i) {
   $(this).attr("title", i+1);
 })
 </script>
 
+
+
+
+<script type="text/javascript">
+var enlarged = false;
+
+$('#container').click(function () {
+    $(this).stop(true, false).animate({
+        width: enlarged ? 200 : 1108,
+        height: enlarged ? 200 : 722,
+        left: 90,
+        top: 90
+    }, 200);
+
+    enlarged = !enlarged;
+});
+</script>
