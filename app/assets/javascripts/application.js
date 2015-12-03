@@ -322,12 +322,26 @@ function gamestart(){
           $("#start-narration2").fadeIn(1000);
           $("#start-narration2").on("click", function(){
             $("#start-narration2").fadeOut(1000);
-            $("#badge1").fadeIn(1000);
-            $("#badge2").fadeIn(1000);
-            $("#badge3").fadeIn(1000);
+            $("#badge1").fadeIn(1000).hover(function() { //hover fades for bing
+              console.log("first fade");
+              $("#bingbong-narration1").fadeIn(10);
+            }, function() {
+              console.log("first fade out");
+              $("#bingbong-narration1").fadeOut(10);
+            });
+            $("#badge2").fadeIn(1000).hover(function() { // hover fades for morgan
+              $("#morgan-narration1").fadeIn(10);
+            }, function() {
+              $("#morgan-narration1").fadeOut(10);
+            });
+            $("#badge3").fadeIn(1000).hover(function() { //hover fades for maria
+              $("#maria-narration1").fadeIn(10);
+            }, function() {
+              $("#maria-narration1").fadeOut(10);
+            });
             $("#notebook-icon").fadeIn(1000, function(){
               $("#notebook-icon").on("click", function(){
-                $("#typing-container4").hide()
+                $("#typing-container4").hide();
                 $("#badge1").fadeOut(1000);
                 $("#badge2").fadeOut(1000);
                 $("#badge3").fadeOut(1000);
@@ -337,8 +351,17 @@ function gamestart(){
                     $("#return-arrow").on("click",function(){
                       $("#flipbook-container").fadeOut(2000);
                       $("#return-arrow").fadeOut(1000);
-                      $("#badge1").fadeIn(1000);
-                      $("#badge2").fadeIn(1000);
+                      $("#badge1").fadeIn(1000).hover(function() { // hover fades for bing
+                        console.log("second fade");
+                        $("#bingbong-narration1").fadeIn(10);
+                      }, function() {
+                        $("#bingbong-narration1").fadeOut(10);
+                      });
+                      $("#badge2").fadeIn(1000).hover(function() { //hover fades for morgan
+                        $("#morgan-narration1").fadeIn(10);
+                      }, function() {
+                        $("#morgan-narration1").fadeOut(10);
+                      });
                       $("#badge3").fadeIn(1000, function(){
                         $("#notebook-icon").fadeIn(1000, function(){
                           $("#notebook-icon").on("click", function(){
@@ -352,10 +375,22 @@ function gamestart(){
                                 $("#return-arrow").on("click",function(){
                                   $("#flipbook-container").fadeOut(2000);
                                   $("#return-arrow").fadeOut(1000);
-                                  $("#badge1").fadeIn(1000);
-                                  $("#badge2").fadeIn(1000);
-                                  $("#badge3").fadeIn(1000, function(){
-                                  });                    
+                                  $("#badge1").fadeIn(1000); //hover function for badge 1 
+                                  console.log("test");
+                                  $("#badge1").hover(function() {
+                                    $("#bingbong-narration1").fadeIn(10);
+                                    console.log("hey");
+                                  }, function() {
+                                    $("#bingbong-narration1").fadeOut(10);
+                                    console.log("bye");
+                                  });
+                                  $("#badge2").fadeIn(1000).hover(function() { //morgan fades
+                                    $("#morgan-narration1").fadeIn(10);
+                                  }, function() {
+                                    $("#morgan-narration1").fadeOut(10);
+                                  });
+                                  $("#badge3").fadeIn(1000, function(){                                   
+                                  });
                                 });
                               });
                             });
@@ -372,7 +407,7 @@ function gamestart(){
       });
     });
   });
-}
+} //last line in game start
 
 
 

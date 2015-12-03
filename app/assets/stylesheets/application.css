@@ -704,18 +704,84 @@ a{
   z-index: 3;
 /*  border:1px solid green;*/
 }
-
-#badge1:hover{
-  width: 8%;
+/*-----------------------------badges hover--------------------------------*/
+#bingbong-container{
+  position: absolute;
+  top: 12%;
+  left: 19%;
+  z-index: 1;
+  width: 55%;
 }
+#bingbong-narration1 {
+  display:none;
+}
+#bingbong-narration1 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.05vw;
+  margin: 10px 0 0 9px;
+}
+/*________________________________________*/
+#morgan-container{
+  position: absolute;
+  top: 12%;
+  left: 19%;
+  z-index: 1;
+  width: 55%;
+}
+#morgan-narration1{
+  display:none;
+}
+#morgan-narration1 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.05vw;
+  margin: 10px 0 0 9px;
+}
+/*_____________________________________*/
+#maria-container{
+  position: absolute;
+  top: 12%;
+  left: 19%;
+  z-index: 1;
+  width: 55%;
+}
+#maria-narration1{
+  display:none;
+  color:white;
+}
+#maria-narration1 p{
+  color: white; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 3.05vw;
+  margin: 10px 0 0 9px;
+}
+/*__________________________________________*/
+#badge1:hover {
+  width: 8%;
+  display:block;
+/*  bingbong*/
+}
+
 #badge2:hover{
   width: 8%;
 }
+/*#badge2:hover + #maria-narration1{
+  width: 8%;
+  display:block;
+}*/
 #badge3:hover{
   width: 8%;
 }
-
-
+/*#badge3:hover + #morgan-narration1{
+  width: 8%;
+  display:block;
+}
+*/
+/*---------------------end of badges-------------------*/
 #notebook-icon{
   display: none;
 }
