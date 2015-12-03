@@ -21,14 +21,15 @@ $(document).ready(function () {
 	// }, 1500);
 });
 $("#flipbook").turn({
-		width: 1108,
-		height: 722,
-		autoCenter: false,
-  gradients:false
+		width: '60vw',
+		height: '75vh',
+		autoCenter: true,
+  		gradients:false
 	});
 $(".page").not(":first").each(function(i) {
   $(this).attr("title", i+1);
 })
+
 
 
   // $(function(){
