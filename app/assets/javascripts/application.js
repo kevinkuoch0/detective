@@ -94,6 +94,7 @@ setInterval(draw, 3500/60);
  // ***This comment ends the above code at line 67***
 
 $(document).ready(function() {
+  console.log("document.ready");
   $("canvas").fadeIn(3000);
   $("nav").fadeIn(3000);
   $("#noir-song").get(0).play();
