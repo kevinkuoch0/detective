@@ -615,7 +615,7 @@ a{
 
 
 #flipbook-container {
-  display: none;
+/*  display: none;*/
   position: absolute; 
   left: 20%;
   top: 13%;
@@ -633,19 +633,16 @@ a{
   color: rgba(255,255,255,.75);
   left: 20px;
   top: 10px;
-  width: 60vw;
-  height: 72vh;
+  width: 62vw;
+  height: 68vh;
   position: absolute;
   text-shadow: 0 0 6px black;
 }
 .page {
   background: no-repeat center top;
   background-size: 100%;
-  width: 60vw;
-  height: 72vh;
-  width: 752px;
-  height: 752px;
-  overflow: hidden;
+  width: 62vw;
+  height: 68vh;
 }
 .cover {
 
@@ -736,4 +733,16 @@ a{
   position: absolute;
   left: 75%;
   top: 13%;
+}
+
+#return-arrow{
+  /*display: none;*/
+}
+
+#return-arrow img{
+  width: 80px;
+  height: 100px;
+  position: absolute;
+  left: 85%;
+  top: 70%;
 }
