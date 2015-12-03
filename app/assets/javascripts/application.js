@@ -331,7 +331,39 @@ function gamestart(){
                 $("#badge2").fadeOut(1000);
                 $("#badge3").fadeOut(1000);
                 $("#notebook-icon").fadeOut(1000);
-                $("#flipbook-container").fadeIn(2000);
+                $("#flipbook-container").fadeIn(2000, function(){
+                  $("#return-arrow").fadeIn(1000,function(){
+                    $("#return-arrow").on("click",function(){
+                      $("#flipbook-container").fadeOut(2000);
+                      $("#return-arrow").fadeOut(1000);
+                      $("#badge1").fadeIn(1000);
+                      $("#badge2").fadeIn(1000);
+                      $("#badge3").fadeIn(1000, function(){
+                        $("#notebook-icon").fadeIn(1000, function(){
+                          $("#notebook-icon").on("click", function(){
+                            $("#typing-container4").hide()
+                            $("#badge1").fadeOut(1000);
+                            $("#badge2").fadeOut(1000);
+                            $("#badge3").fadeOut(1000);
+                            $("#notebook-icon").fadeOut(1000);
+                            $("#flipbook-container").fadeIn(2000, function(){
+                              $("#return-arrow").fadeIn(1000,function(){
+                                $("#return-arrow").on("click",function(){
+                                  $("#flipbook-container").fadeOut(2000);
+                                  $("#return-arrow").fadeOut(1000);
+                                  $("#badge1").fadeIn(1000);
+                                  $("#badge2").fadeIn(1000);
+                                  $("#badge3").fadeIn(1000, function(){
+                                  });                    
+                                });
+                              });
+                            });
+                          });
+                        });  
+                      });                    
+                    });
+                  });
+                });
               });
             });
           });

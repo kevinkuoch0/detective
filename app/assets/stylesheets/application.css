@@ -615,12 +615,10 @@ a{
 
 
 #flipbook-container {
-/*  display: none;*/
+  display: none;
   position: absolute; 
   left: 20%;
   top: 13%;
-  width:1108px;
-  height:722px;
 }
 
 #flipbook {
@@ -634,7 +632,7 @@ a{
   left: 20px;
   top: 10px;
   width: 62vw;
-  height: 68vh;
+  height: 70vh;
   position: absolute;
   text-shadow: 0 0 6px black;
 }
@@ -675,10 +673,9 @@ a{
 #badge1{
 /*This is the center badge*/
   position: absolute;
-  top:330px;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 12%;
+  width: 6%;
+  left: 33%;
   margin:auto;
   display: none;
   z-index: 3;
@@ -687,10 +684,10 @@ a{
 #badge2{
 /*This is the left badge*/
   position: absolute;
-  top:330px;
-  bottom: 0;
+  bottom: 12%;
+  width: 6%;
   left: 0;
-  right: 400px;
+  right: 0;
   margin:auto;
   display: none;
   z-index: 3;
@@ -699,10 +696,9 @@ a{
 #badge3{
 /*This is the right badge*/
   position: absolute;
-  top:330px;
-  bottom: 0;
-  left: 400px;
-  right: 0;
+  bottom: 12%;
+  width: 6%;
+  right: 33%;
   margin:auto;
   display: none;
   z-index: 3;
@@ -710,16 +706,13 @@ a{
 }
 
 #badge1:hover{
-  width:144px;
-  height:196px;
+  width: 8%;
 }
 #badge2:hover{
-  width:144px;
-  height:196px;
+  width: 8%;
 }
 #badge3:hover{
-  width:144px;
-  height:196px;
+  width: 8%;
 }
 
 
@@ -728,21 +721,25 @@ a{
 }
 
 #notebook-icon img{
-  width: 100px;
-  height: 120px;
+  width: 4%;
+
   position: absolute;
   left: 75%;
   top: 13%;
 }
 
+#notebook-icon img:hover{
+  width: 6%;
+
+}
+
 #return-arrow{
-  /*display: none;*/
+  display: none;
 }
 
 #return-arrow img{
-  width: 80px;
-  height: 100px;
+  width: 5%;
   position: absolute;
-  left: 85%;
-  top: 70%;
+  left: 84%;
+  bottom: 12%;
 }
