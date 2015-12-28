@@ -313,6 +313,8 @@ span {
   white-space: nowrap;
   overflow: hidden;
   width: 30em;
+  cursor: pointer;
+  cursor: hand;  
 }
 
 #typing-container2{
