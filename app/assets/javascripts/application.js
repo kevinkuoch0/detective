@@ -123,6 +123,7 @@ $(document).ready(function() {
     $("#credits").fadeOut(1000);
     $("#quote-container").fadeIn(5000);
     $("#quote-container").fadeOut(5000);
+    $("#skip-container").fadeIn(5000);
     $("#alley-sound").delay(2000).get(0).play();
     $("#bootswalking").delay(2000).get(0).play();
     $("#alleyway-bg").delay(10000).fadeIn(4000, function() {
@@ -300,6 +301,7 @@ function phonestart(){
 function gamestart(){
   $('#phone-bg').fadeOut(2500); //start of the gamestart scene
   $("#finaldoor").get(0).play();
+  $("#skip-container").fadeOut(5000);
   $("#gamestart-bg").fadeIn(2500, function(){
     $("#gamestart-bg").fadeTo(300, 0.1);
     $({blurRadius: 0}).animate({blurRadius: 10}, {

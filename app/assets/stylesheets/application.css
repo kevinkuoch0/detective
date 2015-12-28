@@ -55,15 +55,21 @@ nav ul{
 nav li{
   position: relative;
   padding-bottom: 20px;
+  cursor: pointer;
+  cursor: hand;
 }
 
 nav li a:visited{
   color:white;
+  cursor: pointer;
+  cursor: hand;
 }
 
 nav li a:link{
   text-decoration: none;
   color: white;
+  cursor: pointer;
+  cursor: hand;
 }
 
 @font-face{
@@ -92,26 +98,30 @@ span {
   font-size: 2.6vw;
   margin:10px 0 0 9px;
 }
-#sound-on img{
+#sound-on{
   width: 30px;
   position: absolute;
   top: 11%;
   right: 0;
   padding: 5px;
   z-index: 9999;
+  cursor: pointer;
+  cursor: hand;
 }
 
 #sound-on{
   display: none;
 }
 
-#sound-off img{
+#sound-off{
   width: 30px;
   position: absolute;
   top: 11%;
   right: 0;
   padding: 5px;
   z-index: 9999;
+  cursor: pointer;
+  cursor: hand;
 }
 
 #music-icon img{
@@ -176,14 +186,20 @@ span {
   font-size: 2vw;
   color: white;
   display: none;
+  cursor: pointer;
+  cursor: hand;
 }
 
 #back-div a{
   text-decoration: none;
+  cursor: pointer;
+  cursor: hand;  
 }
 
 #back-div a:visited{
   color: white;
+  cursor: pointer;
+  cursor: hand;  
 }
 
 /*below is the alleyway code for the first scene*/
@@ -277,6 +293,26 @@ span {
   overflow: hidden;
   width: 30em;
   animation: type 4s steps(60, end); 
+}
+
+#skip-container{
+  display: none;
+  position: absolute;
+  top: 84%;
+  left: 72%;
+  z-index: 1;
+  font-size: 2vw;
+}
+
+#skipping p{
+  color: #A9A9A9; 
+  font-family: "Journal";
+  font-weight: bold;
+  font-size: 25px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
 }
 
 #typing-container2{
