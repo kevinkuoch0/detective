@@ -425,6 +425,8 @@ a{
   font-weight: bold;
   font-size: 3.2vw;
   margin: 10px 0 0 9px;
+  cursor: pointer;
+  cursor: hand;
 }
 
 #narration2{
@@ -438,6 +440,8 @@ a{
   font-weight: bold;
   font-size: 3.2vw;
   margin: 10px 0 0 9px;
+  cursor: pointer;
+  cursor: hand;
 }
 
 #narration3{
@@ -451,6 +455,8 @@ a{
   font-weight: bold;
   font-size: 3.05vw;
   margin: 10px 0 0 9px;
+  cursor: pointer;
+  cursor: hand;
 
 }
 
@@ -473,6 +479,8 @@ a{
   font-weight: bold;
   font-size: 2.9vw;
   margin: 10px 0 0 9px;
+  cursor: pointer;
+  cursor: hand;  
 }
 
 #office-narration2{
@@ -486,6 +494,8 @@ a{
   font-weight: bold;
   font-size: 3.2vw;
   margin: 10px 0 0 9px;
+  cursor: pointer;
+  cursor: hand;  
 }
 
 #office-narration3{
@@ -499,6 +509,8 @@ a{
   font-weight: bold;
   font-size: 3.05vw;
   margin: 10px 0 0 9px;
+  cursor: pointer;
+  cursor: hand;  
 }
 
 #office-narration4{
@@ -512,6 +524,8 @@ a{
   font-weight: bold;
   font-size: 3.05vw;
   margin: 10px 0 0 9px;
+  cursor: pointer;
+  cursor: hand;  
 }
 
 #office-narration5{
@@ -525,6 +539,8 @@ a{
   font-weight: bold;
   font-size: 2.9vw;
   margin: 10px 0 0 9px;
+  cursor: pointer;
+  cursor: hand;  
 }
 
 
@@ -546,6 +562,8 @@ a{
   font-weight: bold;
   font-size: 2.6vw;
   margin: 10px 0 0 9px;
+  cursor: pointer;
+  cursor: hand;  
 }
 
 #phone-narration2{
@@ -558,6 +576,8 @@ a{
   font-weight: bold;
   font-size: 3.2vw;
   margin: 10px 0 0 9px;
+  cursor: pointer;
+  cursor: hand;  
 }
 
 #phone-narration3{
@@ -570,6 +590,8 @@ a{
   font-weight: bold;
   font-size: 3.05vw;
   margin: 10px 0 0 9px;
+  cursor: pointer;
+  cursor: hand;  
 }
 
 #phone-narration4{
@@ -582,6 +604,8 @@ a{
   font-weight: bold;
   font-size: 3.05vw;
   margin: 10px 0 0 9px;
+  cursor: pointer;
+  cursor: hand;  
 }
 
 #phone-narration5{
@@ -594,6 +618,8 @@ a{
   font-weight: bold;
   font-size: 3.05vw;
   margin: 10px 0 0 9px;
+  cursor: pointer;
+  cursor: hand;  
 }
 
 #film-border-top{
@@ -635,6 +661,8 @@ a{
   font-weight: bold;
   font-size: 3.2vw;
   margin: 10px 0 0 9px;
+  cursor: pointer;
+  cursor: hand;  
 }
 
 #start-narration2{
@@ -647,6 +675,8 @@ a{
   font-weight: bold;
   font-size: 3.2vw;
   margin: 10px 0 0 9px;
+  cursor: pointer;
+  cursor: hand;  
 }
 
 
@@ -828,6 +858,8 @@ a{
   position: absolute;
   left: 75%;
   top: 13%;
+  cursor: pointer;
+  cursor: hand;
 }
 
 #notebook-icon img:hover{
@@ -844,4 +876,6 @@ a{
   position: absolute;
   left: 84%;
   bottom: 12%;
+  cursor: pointer;
+  cursor: hand;  
 }
