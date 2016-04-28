@@ -77,12 +77,10 @@ var draw = function(){
   c.font="20px Betty Noir Regular";
   c.fillStyle = "white";
   c.fillText("Hello World!",500,200);
-
   while(particles.length > 500) particles.shift();
-c.font = "30px Arial";
-c.fillStyle = "white";
 
-c.fillText("BEGIN",515,275);
+
+
   for(var i = 0; i < particles.length; i++)
   {
     particles[i].update();
