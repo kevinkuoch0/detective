@@ -6,8 +6,268 @@
   });
 </script> -->
 
-  <%= javascript_include_tag  'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-
 <audio id="noir-song" src="noir-song.mp3" loop="loop"></audio>
+<audio id="bootswalking" src="bootswalking.mp3"></audio>
+<audio id="alley-sound" src="alley.mp3"></audio>
+<audio id="type-sound" src="typewriter.mp3"></audio>
+<audio id="door-sound" src="heavydoor.mp3"></audio>
+<audio id="officenoise-sound" src="officenoises.mp3"></audio>
+<audio id="phonenoise-sound" src="phonescene.mp3"></audio>
+<audio id="finaldoor" src="finaldoor.mp3"></audio>
+<%= javascript_include_tag  'application', 'data-turbolinks-track' => true %>
+
+<div id="film-border-top" ></div>
+<div id="film-border-bottom" ></div>
+
+<div id="music-icon" ><img src="/assets/music-icon.png" alt="music icon" /></div>
+<img src="/assets/sound-off.png" id="sound-off" alt="sound-off" />
+<img src="/assets/sound-on.png" id="sound-on" alt="sound-on" />
+
+<nav>
+  <ul>
+    <li><a id="start">Start</a></li>
+    <li><a id="credits">Credits</a></li>
+  </ul>
+</nav>
+<img id ="credits-bg" src="assets/credits(2).jpg" alt="Credits photo" height="365" width="500">
+<img id ="alleyway-bg" src="assets/alleyway(3).jpg" alt="This is the alley scene" height="365" width="500">
+<img id ="office-bg" src="assets/office(4).jpg" alt = "This is the first office scene" height="365" width="500">
+<img id="phone-bg" src="assets/phone(5).jpg" alt = "This is the phone scene" height="365" width="500"> 
+<img id="gamestart-bg" src="assets/gamestart(6).jpg" alt = "This is the game start scene" height="365" width="500">
+<img id="gamestart-bg2" src="assets/gamestart(6).jpg" alt = "This is the true game start" height="365" width="500">
+<img id="badge1" src="assets/badge1.gif" alt = "This is the first badge" >
+<img id="badge2" src="assets/badge1.gif" alt = "This is the first badge" >
+<img id="badge3" src="assets/badge1.gif" alt = "This is the first badge" >
+<div id="back-div" >
+	<a id="back-to-menu">Back to Main Menu</a>
+</div>
+
+<!-- <div id="skip-container">
+  <div id="skipping">
+    <p>Skip Intro</p>
+  </div>
+</div> -->
+
+<div id="typing-container">
+  <div id="typing">
+    <p>11:58 P.M  Abaddon Alley</p>
+  </div>
+</div>
+
+<div id="typing-container2">
+  <div id="typing2">
+    <p>12:10 A.M Fontaine Investigations</p>
+  </div>
+</div>
+
+<div id="typing-container3">
+  <div id="typing3">
+    <p>12:13 A.M Unknown Caller</p>
+  </div>
+</div>
+
+<div id="typing-container4">
+  <div id="typing4">
+    <p>12:28 A.M Fontaine Investigations</p>
+  </div>
+</div>
+
+<div id="quote-container">
+  <div id="quote">
+    <p>"The mind is it's own place, and in itself can make a heaven of hell, a hell of heaven."<br /><br />
+    John Milton
+    </p>
+  </div>
+</div>
+
+
+<div id="narration-container">
+  <div id="narration1">
+    <p>Abaddon. A cesspool of sin and broken dreams. The sounds of sirens and splashing puddles fills my ears as the cold night air stabs into my lungs with each step that I take down this forgotten city. I've walked down this alley countless times, yet every time it feels like a random and unfamiliar coin toss. A cruel dichotomy between the ideal we wish to see in the world, and the reality we are forced to live in.
+    </p>
+  </div>
+  <div id="narration2">
+    <p>
+    It feels like a lifetime ago when a fresh faced young Danny made his way to Abaddon City, walking down these very same alleys, ready to save the world just like any other naive rookie. Back then, it was much easier to feel invincible when the only thing separating you and the world was just a black and white lens.
+    </p>
+  </div>
+  <div id="narration3">
+    <p>
+    Spend enough time on this job and you quickly begin to realize that ideals are not bulletproof vests. That come end of the day, ideals are nothing but limitations and rules. Rules that put you at a disadvantage against people who do not care to play by them in the first place. I've seen men and women come and go, all lost somewhere between that fine line of good and evil, that struggle between ideal and survival. Having spent so much time out on these streets, I'm always left wondering which side of that coin I'll end up at the end of the night.
+    </p>
+  </div>
+</div>
+
+
+
+<div id="office-narration-container">
+  <div id="office-narration1">
+    <p>
+    As I stare out into the endless lights of Abaddon, I can't help but feel a sense of foreboding. Something has been quieting these streets lately, and in Abaddon, that's never a good thing. Word from the DA has it that there's been a string of murders in the last 72 hours, each holding a similar MO. Several of Abaddon's finest have been turning up dead in their own homes, each of them a result of a suicide. The DA suggests foul play and I've been sent a summary of the victims along with a request to help with the investigation. As I open up the summary packet, I can already feel a sinking feeling in my chest as my eyes graze over the document.
+    </p>
+  </div>
+  <div id="office-narration2">
+    <p>
+      Bernhardt, Jack. Married. Age 38. Date of Death October 21st, 1945 at 10:47 P.M. 
+      <br />
+      <br />
+      "Found dead in his home as a result of self-inflicted asphyxiation via hanging. Early reports from his wife indicate that despite Jack experiencing slightly increased agitation as a result of work related stress, there was no outward or significant change in personality." 
+    </p>
+  </div>
+  <div id="office-narration3">
+    <p>
+      Somners, Lisa. Single. Age 27. Date of Death October 22nd, 1945 at 11:09 P.M. 
+      <br />
+      <br />
+      "Found dead in her home. Reports from the coroner show that Maria died as a result of heart failure brought about by ingesting alcohol and amphetamines. After bringing in and questioning some of her close friends, the victim was revealed to have a strong personal belief against illegal drugs and substances."
+    </p>
+  </div>
+  <div id="office-narration4">
+    <p>
+      Brannigan, Harvey. Divorced. Age 42. Date of Death October 23rd, 1945 at 9:27 P.M. 
+      <br />
+      <br />
+      "Found dead at home. Victim died as a result of a self-inflicted gunshot wound to the head. Harvey had recently divorced his wife about a year ago and may have had troubles dealing with the aftermath. Interviews with his ex-wife state that when they last spoke about a week ago, they were discussing differing schedules on when to drop off their 8 year old son, John."
+    </p>
+  </div>
+  <div id="office-narration5">
+    <p>
+      As I slip the envelope back onto my desk, my mind races as I try to put the pieces together. I knew Jack. He and I were good friends during our time at the academy. He was one of the few people I still kept in contact with after I left the precinent. Things didn't add up. If there was two things I knew Jackie for, it was for having a hard-nose, and a solid right hook. He wasn't the type to cash in and give up, or the type you would wanna bet against in a fight. If there's foul play involved, whoever they are, they somehow managed to convince Jackie to off himself through mental, or physical means. Both weren't looking like very good prospects to me.
+    </p>
+  </div>
+</div>
+
+<div id="phone-container">
+  <div id="phone-narration1">
+    <p>"Fontaine."
+      <br />
+      <br />
+      I immediately begin to hear slow, light, rhythmic breathing.    
+      <br />
+      <br />
+      "Listen, it's past midnight. If this is someone's idea of a joke I-" 
+      <br />
+      <br />
+      <span>"...F-Faces of three under your desk you will find. Anger. Doubt. Regret. It is these sins to which our soul are confined."</span>
+    </p>
+  </div>
+  <div id="phone-narration2">
+    <p>
+      That voice. Two tours and twelve years on the force still couldn't prepare me for the knot that formed in the depths of my stomach the moment I heard that voice. Whoever this was, my instinct was telling me this was not a joke. As I cautiously trace my hand under my desk, I can feel my adrenaline kick in as my hand grazes over a raised, cold, metallic object.
+      <br />
+      <br />
+      "...I'm listening."
+    </p>
+  </div>
+  <div id="phone-narration3">
+    <p>
+    <span>"D-Don't worry Mr. Fontaine, it's not dangerous. I don't want our game to end before it began..."</span>
+    <br />
+    <br />
+    And with that, the line goes silent.
+    <br />
+    <br />
+    As I search under my desk, taped underneath is a badge and several photos. As I pull down and examine the clues further, a feeling of dread washes over me. "Officer 1742." Jackie's badge.
+    </p>
+  </div>
+
+  <div id="phone-narration4">
+    <p>
+    Whoever this person was, they somehow managed to get into my office without a trace, and they knew about Jackie. Someone from the past? Or possibly someone new? My mind races as I go through the photos, if I hope to find any answers, whatever is in these photos may hold the key. 
+    </p>
+  </div>
+
+  <div id="phone-narration5">
+    <p>
+    As I sift through the pictures, my worst fears are realized. On each photo was a separate person, no doubt people he's been tailing for a while. Written on the back of each photo is the address of the suspect, along with a message.
+    <br />
+    <br />
+    "12:45 A.M. Choose."
+    </p>
+  </div>
+</div>
+
+<div id="start-container">
+  <div id="start-narration1">
+    <p>
+      Three photos. Three lives. Three choices. 
+      <br />
+      <br />
+      Whoever this punk is, he hasn't given me much time. All three of these addresses are of equal distances from here, but in opposite directions. What will happen if I call for backup? 
+  </div>
+
+  <div id="start-narration2">
+    <p>
+      Regardless, I have to accept the possibility that I'm being watched. Tonight has left me with a million questions, but if there's one thing I AM certain of, it's going to be a long night.
+    </p>
+  </div>
+</div>
+
+
+
+
+<div id="morgan-container">
+  <div id="morgan-narration1">
+    <p>
+      Morgan Gerhardt,<br>
+      "Morgan's address isn't too far from here. If he's to have any hope of surviving, I'd better head out now."
+    </p>
+  </div>
+</div>
+
+
+
+<div id="maria-container">
+  <div id="maria-narration1">
+    <p>
+      Maria Garland,<br>
+      "Miss Garland is going to be next on this guy's list if I don't head out now. I'm not keen on seeing a young gal's life ended so needlessly."
+    </p>
+  </div>
+</div>
+
+
+
+<div id="bingbong-container">
+  <div id="bingbong-narration1">
+    <p>
+      Bingbong the Gaseous,<br>
+      "Something about this guy's face gets on my nerves. Ugly mug or not, I have to get a move on if I don't want this guy's blood on my conscience."
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<%=  render "turn" %>
+
+<div id="return-arrow">
+  <img src="/assets/return-arrow.png" alt="return arrow" />
+</div>
+
+
+<div id="notebook-icon">
+  <img src="/assets/notebook-cover.png" alt="notebook icon" />
+</div>
+
+<!-- below is the credit text -->
+<div id="credits-container">
+    <div id="credits-list">
+        <h3>Kevin Kuoch</h3>
+        <h3>Darius Jones</h3>
+        <h3>Noir Music by Mr. NoName</h3>
+        <h3>Smoke Particle Emitter by Cucu Ionel</h3>
+        <h3>Created with HTML5 Canvas, jQuery and Turn.js</h3>
+    </div>
+</div>
+<div id="bottom-bar"><div>
+
+
 

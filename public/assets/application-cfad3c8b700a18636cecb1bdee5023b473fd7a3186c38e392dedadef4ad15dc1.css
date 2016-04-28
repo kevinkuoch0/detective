@@ -10,14 +10,11 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
-#title {
-border:1px solid red; 
-color: white;
-font-family: 'Chonburi', cursive;
-}
+
+
 body{
   background:#000;
   width: 100%;
@@ -28,13 +25,8 @@ body{
 canvas{
 /*the code below this activates the canvas border, turn it on to visibly see how big the canvas is */
 
-<<<<<<< HEAD
-	border: 1px solid red;  
-
-=======
 /*	border: 1px solid red;*/  
   width: 100%;
->>>>>>> fdf244fdce44c395486fc6264983358e09808868
 	position: absolute;
     top:0;
     bottom: 0;
